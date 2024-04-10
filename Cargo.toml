@@ -6,33 +6,53 @@ edition = "2021"
 [dependencies]
 # row 1, variant 1: range is "x" where x >= 1 (equivalent to "^x"), update is compatible (1.0.0 ->
 # 1.1.6)
+#
+# PR created: None
 camino = "1"
 # row 1, variant 2: range is "x.y" where x >= 1 (equivalent to "^x.y"), update is compatible (1.0.1
 # -> 1.0.5)
+#
+# PR created: None
 debug-ignore = "1.0"
 # row 1, variant 3: range is "0.y" (equivalent to "~0.y"), update is compatible (for Rust this means
 # anything within the 0.y series: 0.4.31 -> 0.4.37)
+#
+# PR created: None
 chrono = "0.4"
 
 # row 2, variant 1: range is "x" where x >= 1 (equivalent to "^x"), update is incompatible (1.0.100
 # -> 2.0.58)
+#
+# PR created: https://github.com/sunshowers/renovate-test-2/pull/8
 syn = "1"
 # row 2, variant 2: range is "x.y" where x >= 1 (equivalent to "^x.y"), update is incompatible
 # (1.9.3 -> 2.0.0)
+#
+# PR created: https://github.com/sunshowers/renovate-test-2/pull/7
 indexmap = "1.0"
 # row 2, variant 3: range is "0.y" (equivalent to "~0.y"), update is incompatible (0.2.27 -> 0.3.35)
+#
+# PR created: https://github.com/sunshowers/renovate-test-2/pull/5
 time = "0.2"
 
 # row 3, variant 1: range is "x.y.z" where x >= 1 (equivalent to "^x.y.z"), update is compatible
 # (2.4.0 -> 2.5.0)
+#
+# PR created: https://github.com/sunshowers/renovate-test-2/pull/4
 bitflags = "2.4.0"
 # row 3, variant 2: range is "0.y.z" (equivalent to "~0.y.z"), update is compatible (0.2.140 ->
 # 0.2.153)
+#
+# PR created: https://github.com/sunshowers/renovate-test-2/pull/2
 libc = "0.2.140"
 
 # row 4, variant 1: range is "x.y.z" where x >= 1 (equivalent to "^x.y.z"), update is incompatible
 # (1.9.0 -> 2.0.2)
+#
+# PR created: https://github.com/sunshowers/renovate-test-2/pull/6
 fastrand = "1.9.0"
 # row 4, variant 2: range is "0.y.z" (equivalent to "~0.y.z"), update is incompatible (0.21.0 ->
 # 0.22.0)
+#
+# PR created: https://github.com/sunshowers/renovate-test-2/pull/3
 base64 = "0.21.0"

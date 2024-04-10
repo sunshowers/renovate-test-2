@@ -1,0 +1,2559 @@
+DEBUG: Using RE2 regex engine
+DEBUG: Parsing configs
+DEBUG: Checking for config file in /config.json
+DEBUG: File config
+       "config": {
+         "platform": "github",
+         "autodiscover": false,
+         "repositories": ["sunshowers/renovate-test-2"]
+       }
+DEBUG: CLI config
+       "config": {}
+DEBUG: Env config
+       "config": {"hostRules": [], "token": "***********"}
+DEBUG: Combined config
+       "config": {
+         "platform": "github",
+         "autodiscover": false,
+         "repositories": ["sunshowers/renovate-test-2"],
+         "hostRules": [],
+         "token": "***********"
+       }
+DEBUG: Enabling forkProcessing while in non-autodiscover mode
+DEBUG: Found valid git version: 2.43.2
+DEBUG: Setting global hostRules
+DEBUG: Using default github endpoint: https://api.github.com/
+DEBUG: hostRules: authentication already set for api.github.com
+DEBUG: GET https://api.github.com/user/emails = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=272)
+DEBUG: Cannot read user/emails endpoint on GitHub to retrieve gitAuthor
+DEBUG: Platform config
+       "platformConfig": {
+         "hostType": "github",
+         "endpoint": "https://api.github.com/",
+         "isGHApp": false,
+         "isGhe": false,
+         "userDetails": {"username": "sunshowers", "name": "Rain", "id": 180618},
+         "userEmail": null
+       },
+       "renovateUsername": "sunshowers"
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+DEBUG: Using baseDir: /tmp/renovate
+DEBUG: Using cacheDir: /tmp/renovate/cache
+DEBUG: Using containerbaseDir: /tmp/renovate/cache/containerbase
+DEBUG: Initializing Renovate internal cache into /tmp/renovate/cache/renovate/renovate-cache-v1
+DEBUG: Commits limit = null
+DEBUG: Setting global hostRules
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+DEBUG: validatePresets()
+DEBUG: Reinitializing hostRules for repo
+DEBUG: Clearing hostRules
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+ INFO: Repository started (repository=sunshowers/renovate-test-2)
+       "renovateVersion": "37.280.0"
+DEBUG: Using localDir: /tmp/renovate/repos/github/sunshowers/renovate-test-2 (repository=sunshowers/renovate-test-2)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=sunshowers/renovate-test-2)
+DEBUG: initRepo("sunshowers/renovate-test-2") (repository=sunshowers/renovate-test-2)
+DEBUG: hostRules: authentication already set for api.github.com (repository=sunshowers/renovate-test-2)
+DEBUG: sunshowers/renovate-test-2 default branch = main (repository=sunshowers/renovate-test-2)
+DEBUG: Using personal access token for git init (repository=sunshowers/renovate-test-2)
+DEBUG: Resetting npmrc (repository=sunshowers/renovate-test-2)
+DEBUG: Resetting npmrc (repository=sunshowers/renovate-test-2)
+DEBUG: checkOnboarding() (repository=sunshowers/renovate-test-2)
+DEBUG: isOnboarded() (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=sunshowers/renovate-test-2)
+DEBUG: http cache: saving https://api.github.com/repos/sunshowers/renovate-test-2/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag="235d575105968ebc1d87c5428b113f037a2997bdd09bebdd57e0d0a9b17676e5", lastModified=undefined) (repository=sunshowers/renovate-test-2)
+DEBUG: getPrList success (repository=sunshowers/renovate-test-2)
+       "pullsTotal": 0,
+       "requestsTotal": 1,
+       "apiQuotaAffected": true
+DEBUG: findPr(renovate/configure, chore: Configure Renovate, !open) (repository=sunshowers/renovate-test-2)
+DEBUG: findFile(renovate.json) (repository=sunshowers/renovate-test-2)
+DEBUG: Initializing git repository into /tmp/renovate/repos/github/sunshowers/renovate-test-2 (repository=sunshowers/renovate-test-2)
+DEBUG: Performing blobless clone (repository=sunshowers/renovate-test-2)
+DEBUG: git clone completed (repository=sunshowers/renovate-test-2)
+       "durationMs": 1013
+DEBUG: latest repository commit (repository=sunshowers/renovate-test-2)
+       "latestCommit": {
+         "hash": "89d63baefc689f43d3f3955d988a9e67b7d914ab",
+         "date": "2024-04-10T15:06:03-07:00",
+         "message": "initial commit",
+         "refs": "HEAD -> main, origin/main, origin/HEAD",
+         "body": "",
+         "author_name": "Rain",
+         "author_email": "rain@sunshowers.io"
+       }
+DEBUG: Config file exists, fileName: renovate.json (repository=sunshowers/renovate-test-2)
+DEBUG: Retrieving issueList (repository=sunshowers/renovate-test-2)
+DEBUG: Retrieved 0 issues (repository=sunshowers/renovate-test-2)
+DEBUG: Repo is onboarded (repository=sunshowers/renovate-test-2)
+DEBUG: Found renovate.json config file (repository=sunshowers/renovate-test-2)
+DEBUG: Repository config (repository=sunshowers/renovate-test-2)
+       "fileName": "renovate.json",
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "dependencyDashboard": true,
+         "dependencyDashboardApproval": false,
+         "dependencyDashboardAutoclose": false,
+         "prHourlyLimit": 50,
+         "enabledManagers": ["cargo"]
+       }
+DEBUG: migrateAndValidate() (repository=sunshowers/renovate-test-2)
+DEBUG: No config migration necessary (repository=sunshowers/renovate-test-2)
+DEBUG: Found repo ignorePaths (repository=sunshowers/renovate-test-2)
+       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
+DEBUG: No vulnerability alerts found (repository=sunshowers/renovate-test-2)
+DEBUG: No vulnerability alerts found (repository=sunshowers/renovate-test-2)
+DEBUG: findIssue(Dependency Dashboard) (repository=sunshowers/renovate-test-2)
+DEBUG: No baseBranches (repository=sunshowers/renovate-test-2)
+DEBUG: extract() (repository=sunshowers/renovate-test-2)
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+DEBUG: Using file match: (^|/)Cargo\.toml$ for manager cargo (repository=sunshowers/renovate-test-2)
+DEBUG: Matched 1 file(s) for manager cargo: Cargo.toml (repository=sunshowers/renovate-test-2)
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2)
+DEBUG: manager extract durations (ms) (repository=sunshowers/renovate-test-2)
+       "managers": {"cargo": 11}
+DEBUG: Found cargo package files (repository=sunshowers/renovate-test-2)
+DEBUG: Found 1 package file(s) (repository=sunshowers/renovate-test-2)
+ INFO: Dependency extraction complete (repository=sunshowers/renovate-test-2, baseBranch=main)
+       "stats": {
+         "managers": {"cargo": {"fileCount": 1, "depCount": 10}},
+         "total": {"fileCount": 1, "depCount": 10}
+       }
+DEBUG: hostRules: no authentication for raw.githubusercontent.com (repository=sunshowers/renovate-test-2)
+DEBUG: downloading crate metadata (repository=sunshowers/renovate-test-2)
+       "crateUrl": "https://crates.io/api/v1/crates/chrono?include=",
+       "packageName": "chrono",
+       "registryUrl": "https://crates.io"
+DEBUG: downloading crate metadata (repository=sunshowers/renovate-test-2)
+       "crateUrl": "https://crates.io/api/v1/crates/debug-ignore?include=",
+       "packageName": "debug-ignore",
+       "registryUrl": "https://crates.io"
+DEBUG: downloading crate metadata (repository=sunshowers/renovate-test-2)
+       "crateUrl": "https://crates.io/api/v1/crates/camino?include=",
+       "packageName": "camino",
+       "registryUrl": "https://crates.io"
+DEBUG: downloading crate metadata (repository=sunshowers/renovate-test-2)
+       "crateUrl": "https://crates.io/api/v1/crates/syn?include=",
+       "packageName": "syn",
+       "registryUrl": "https://crates.io"
+DEBUG: downloading crate metadata (repository=sunshowers/renovate-test-2)
+       "crateUrl": "https://crates.io/api/v1/crates/indexmap?include=",
+       "packageName": "indexmap",
+       "registryUrl": "https://crates.io"
+DEBUG: downloading crate metadata (repository=sunshowers/renovate-test-2)
+       "crateUrl": "https://crates.io/api/v1/crates/base64?include=",
+       "packageName": "base64",
+       "registryUrl": "https://crates.io"
+DEBUG: downloading crate metadata (repository=sunshowers/renovate-test-2)
+       "crateUrl": "https://crates.io/api/v1/crates/time?include=",
+       "packageName": "time",
+       "registryUrl": "https://crates.io"
+DEBUG: downloading crate metadata (repository=sunshowers/renovate-test-2)
+       "crateUrl": "https://crates.io/api/v1/crates/libc?include=",
+       "packageName": "libc",
+       "registryUrl": "https://crates.io"
+DEBUG: downloading crate metadata (repository=sunshowers/renovate-test-2)
+       "crateUrl": "https://crates.io/api/v1/crates/bitflags?include=",
+       "packageName": "bitflags",
+       "registryUrl": "https://crates.io"
+DEBUG: downloading crate metadata (repository=sunshowers/renovate-test-2)
+       "crateUrl": "https://crates.io/api/v1/crates/fastrand?include=",
+       "packageName": "fastrand",
+       "registryUrl": "https://crates.io"
+DEBUG: PackageFiles.add() - Package file saved for base branch (repository=sunshowers/renovate-test-2, baseBranch=main)
+DEBUG: Package releases lookups complete (repository=sunshowers/renovate-test-2, baseBranch=main)
+DEBUG: branchifyUpgrades (repository=sunshowers/renovate-test-2)
+DEBUG: detectSemanticCommits() (repository=sunshowers/renovate-test-2)
+DEBUG: getCommitMessages (repository=sunshowers/renovate-test-2)
+DEBUG: semanticCommits: detected "unknown" (repository=sunshowers/renovate-test-2)
+DEBUG: semanticCommits: disabled (repository=sunshowers/renovate-test-2)
+DEBUG: 8 flattened updates found: syn, indexmap, indexmap, time, bitflags, libc, fastrand, base64 (repository=sunshowers/renovate-test-2)
+DEBUG: Returning 8 branch(es) (repository=sunshowers/renovate-test-2)
+DEBUG: config.repoIsOnboarded=true (repository=sunshowers/renovate-test-2)
+DEBUG: packageFiles with updates (repository=sunshowers/renovate-test-2, baseBranch=main)
+       "config": {
+         "cargo": [
+           {
+             "deps": [
+               {
+                 "depName": "camino",
+                 "depType": "dependencies",
+                 "currentValue": "1",
+                 "managerData": {"nestedVersion": false},
+                 "datasource": "crate",
+                 "lockedVersion": "1.0.0",
+                 "updates": [],
+                 "packageName": "camino",
+                 "versioning": "cargo",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/camino-rs/camino",
+                 "registryUrl": "https://crates.io",
+                 "dependencyUrl": "https://crates.io/crates/camino",
+                 "currentVersion": "1.0.0",
+                 "fixedVersion": "1.0.0"
+               },
+               {
+                 "depName": "debug-ignore",
+                 "depType": "dependencies",
+                 "currentValue": "1.0",
+                 "managerData": {"nestedVersion": false},
+                 "datasource": "crate",
+                 "lockedVersion": "1.0.1",
+                 "updates": [],
+                 "packageName": "debug-ignore",
+                 "versioning": "cargo",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/sunshowers-code/debug-ignore",
+                 "registryUrl": "https://crates.io",
+                 "dependencyUrl": "https://crates.io/crates/debug-ignore",
+                 "currentVersion": "1.0.1",
+                 "fixedVersion": "1.0.1"
+               },
+               {
+                 "depName": "chrono",
+                 "depType": "dependencies",
+                 "currentValue": "0.4",
+                 "managerData": {"nestedVersion": false},
+                 "datasource": "crate",
+                 "lockedVersion": "0.4.31",
+                 "updates": [],
+                 "packageName": "chrono",
+                 "versioning": "cargo",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/chronotope/chrono",
+                 "registryUrl": "https://crates.io",
+                 "dependencyUrl": "https://crates.io/crates/chrono",
+                 "currentVersion": "0.4.31",
+                 "fixedVersion": "0.4.31"
+               },
+               {
+                 "depName": "syn",
+                 "depType": "dependencies",
+                 "currentValue": "1",
+                 "managerData": {"nestedVersion": false},
+                 "datasource": "crate",
+                 "lockedVersion": "1.0.100",
+                 "updates": [
+                   {
+                     "bucket": "major",
+                     "newVersion": "2.0.58",
+                     "newValue": "2",
+                     "newMajor": 2,
+                     "newMinor": 0,
+                     "updateType": "major",
+                     "isRange": true,
+                     "branchName": "renovate/syn-2.x"
+                   }
+                 ],
+                 "packageName": "syn",
+                 "versioning": "cargo",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/dtolnay/syn",
+                 "registryUrl": "https://crates.io",
+                 "dependencyUrl": "https://crates.io/crates/syn",
+                 "currentVersion": "1.0.100",
+                 "isSingleVersion": false,
+                 "fixedVersion": "1.0.100"
+               },
+               {
+                 "depName": "indexmap",
+                 "depType": "dependencies",
+                 "currentValue": "1.0",
+                 "managerData": {"nestedVersion": false},
+                 "datasource": "crate",
+                 "lockedVersion": "1.9.3",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "1.9.3",
+                     "newValue": "1.9",
+                     "newMajor": 1,
+                     "newMinor": 9,
+                     "updateType": "patch",
+                     "isRange": true,
+                     "isBump": true,
+                     "branchName": "renovate/indexmap-1.x"
+                   },
+                   {
+                     "bucket": "major",
+                     "newVersion": "2.2.6",
+                     "newValue": "2.2",
+                     "newMajor": 2,
+                     "newMinor": 2,
+                     "updateType": "major",
+                     "isRange": true,
+                     "branchName": "renovate/indexmap-2.x"
+                   }
+                 ],
+                 "packageName": "indexmap",
+                 "versioning": "cargo",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/indexmap-rs/indexmap",
+                 "registryUrl": "https://crates.io",
+                 "dependencyUrl": "https://crates.io/crates/indexmap",
+                 "currentVersion": "1.9.3",
+                 "isSingleVersion": false,
+                 "fixedVersion": "1.9.3"
+               },
+               {
+                 "depName": "time",
+                 "depType": "dependencies",
+                 "currentValue": "0.2",
+                 "managerData": {"nestedVersion": false},
+                 "datasource": "crate",
+                 "lockedVersion": "0.2.27",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.3.35",
+                     "newValue": "0.3",
+                     "newMajor": 0,
+                     "newMinor": 3,
+                     "updateType": "minor",
+                     "isRange": true,
+                     "branchName": "renovate/time-0.x"
+                   }
+                 ],
+                 "packageName": "time",
+                 "versioning": "cargo",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/time-rs/time",
+                 "registryUrl": "https://crates.io",
+                 "homepage": "https://time-rs.github.io",
+                 "dependencyUrl": "https://crates.io/crates/time",
+                 "currentVersion": "0.2.27",
+                 "isSingleVersion": false,
+                 "fixedVersion": "0.2.27"
+               },
+               {
+                 "depName": "bitflags",
+                 "depType": "dependencies",
+                 "currentValue": "2.4.0",
+                 "managerData": {"nestedVersion": false},
+                 "datasource": "crate",
+                 "lockedVersion": "2.4.0",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "2.5.0",
+                     "newValue": "2.5.0",
+                     "newMajor": 2,
+                     "newMinor": 5,
+                     "updateType": "minor",
+                     "isBump": true,
+                     "branchName": "renovate/bitflags-2.x"
+                   }
+                 ],
+                 "packageName": "bitflags",
+                 "versioning": "cargo",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/bitflags/bitflags",
+                 "registryUrl": "https://crates.io",
+                 "dependencyUrl": "https://crates.io/crates/bitflags",
+                 "currentVersion": "2.4.0",
+                 "isSingleVersion": false,
+                 "fixedVersion": "2.4.0"
+               },
+               {
+                 "depName": "libc",
+                 "depType": "dependencies",
+                 "currentValue": "0.2.140",
+                 "managerData": {"nestedVersion": false},
+                 "datasource": "crate",
+                 "lockedVersion": "0.2.140",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.2.153",
+                     "newValue": "0.2.153",
+                     "newMajor": 0,
+                     "newMinor": 2,
+                     "updateType": "patch",
+                     "isBump": true,
+                     "branchName": "renovate/libc-0.x"
+                   }
+                 ],
+                 "packageName": "libc",
+                 "versioning": "cargo",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/rust-lang/libc",
+                 "registryUrl": "https://crates.io",
+                 "dependencyUrl": "https://crates.io/crates/libc",
+                 "currentVersion": "0.2.140",
+                 "isSingleVersion": false,
+                 "fixedVersion": "0.2.140"
+               },
+               {
+                 "depName": "fastrand",
+                 "depType": "dependencies",
+                 "currentValue": "1.9.0",
+                 "managerData": {"nestedVersion": false},
+                 "datasource": "crate",
+                 "lockedVersion": "1.9.0",
+                 "updates": [
+                   {
+                     "bucket": "major",
+                     "newVersion": "2.0.2",
+                     "newValue": "2.0.2",
+                     "newMajor": 2,
+                     "newMinor": 0,
+                     "updateType": "major",
+                     "branchName": "renovate/fastrand-2.x"
+                   }
+                 ],
+                 "packageName": "fastrand",
+                 "versioning": "cargo",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/smol-rs/fastrand",
+                 "registryUrl": "https://crates.io",
+                 "dependencyUrl": "https://crates.io/crates/fastrand",
+                 "currentVersion": "1.9.0",
+                 "isSingleVersion": false,
+                 "fixedVersion": "1.9.0"
+               },
+               {
+                 "depName": "base64",
+                 "depType": "dependencies",
+                 "currentValue": "0.21.0",
+                 "managerData": {"nestedVersion": false},
+                 "datasource": "crate",
+                 "lockedVersion": "0.21.7",
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "0.22.0",
+                     "newValue": "0.22.0",
+                     "newMajor": 0,
+                     "newMinor": 22,
+                     "updateType": "minor",
+                     "branchName": "renovate/base64-0.x"
+                   }
+                 ],
+                 "packageName": "base64",
+                 "versioning": "cargo",
+                 "warnings": [],
+                 "sourceUrl": "https://github.com/marshallpierce/rust-base64",
+                 "registryUrl": "https://crates.io",
+                 "dependencyUrl": "https://crates.io/crates/base64",
+                 "currentVersion": "0.21.7",
+                 "isSingleVersion": false,
+                 "fixedVersion": "0.21.7"
+               }
+             ],
+             "packageFileVersion": "0.1.0",
+             "lockFiles": ["Cargo.lock"],
+             "packageFile": "Cargo.toml"
+           }
+         ]
+       }
+DEBUG: detectSemanticCommits() (repository=sunshowers/renovate-test-2)
+DEBUG: semanticCommits: returning "disabled" from cache (repository=sunshowers/renovate-test-2)
+DEBUG: processRepo() (repository=sunshowers/renovate-test-2)
+DEBUG: Processing 8 branches: renovate/base64-0.x, renovate/bitflags-2.x, renovate/fastrand-2.x, renovate/indexmap-1.x, renovate/indexmap-2.x, renovate/libc-0.x, renovate/syn-2.x, renovate/time-0.x (repository=sunshowers/renovate-test-2)
+DEBUG: Calculating hourly PRs remaining (repository=sunshowers/renovate-test-2)
+DEBUG: currentHourStart=2024-04-10T22:00:00.000+00:00 (repository=sunshowers/renovate-test-2)
+DEBUG: PR hourly limit remaining: 50 (repository=sunshowers/renovate-test-2)
+DEBUG: Calculating prConcurrentLimit (10) (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/indexmap-1.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/indexmap-1.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/indexmap-1.x, undefined, closed) (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/libc-0.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/libc-0.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/libc-0.x, undefined, closed) (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/base64-0.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/base64-0.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/base64-0.x, undefined, closed) (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/bitflags-2.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/bitflags-2.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/bitflags-2.x, undefined, closed) (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/time-0.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/time-0.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/time-0.x, undefined, closed) (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/fastrand-2.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/fastrand-2.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/fastrand-2.x, undefined, closed) (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/indexmap-2.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/indexmap-2.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/indexmap-2.x, undefined, closed) (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/syn-2.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/syn-2.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/syn-2.x, undefined, closed) (repository=sunshowers/renovate-test-2)
+DEBUG: 0 PRs are currently open (repository=sunshowers/renovate-test-2)
+DEBUG: PR concurrent limit remaining: 10 (repository=sunshowers/renovate-test-2)
+DEBUG: Calculated maximum PRs remaining this run: 10 (repository=sunshowers/renovate-test-2)
+DEBUG: PullRequests limit = 10 (repository=sunshowers/renovate-test-2)
+DEBUG: Calculating hourly PRs remaining (repository=sunshowers/renovate-test-2)
+DEBUG: currentHourStart=2024-04-10T22:00:00.000+00:00 (repository=sunshowers/renovate-test-2)
+DEBUG: PR hourly limit remaining: 50 (repository=sunshowers/renovate-test-2)
+DEBUG: Calculating branchConcurrentLimit (10) (repository=sunshowers/renovate-test-2)
+DEBUG: 0 already existing branches found:  (repository=sunshowers/renovate-test-2)
+DEBUG: Branch concurrent limit remaining: 10 (repository=sunshowers/renovate-test-2)
+DEBUG: Calculated maximum branches remaining this run: 10 (repository=sunshowers/renovate-test-2)
+DEBUG: Branches limit = 10 (repository=sunshowers/renovate-test-2)
+DEBUG: syncBranchState() (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: getBranchPr(renovate/indexmap-1.x) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: findPr(renovate/indexmap-1.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: findPr(renovate/indexmap-1.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: branchExists=false (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: findPr(renovate/indexmap-1.x, Update Rust crate indexmap to 1.9, !open) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: prAlreadyExisted=false (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Checking schedule(at any time, null) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: No schedule defined (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Branch needs creating (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Using reuseExistingBranch: false (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Starting search at index 48 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "depName": "indexmap"
+DEBUG: Found match at index 48 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "manager": "cargo",
+       "expectedValue": "1.9",
+       "foundValue": "1.0"
+DEBUG: Found match at index 176 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "manager": "cargo",
+       "expectedValue": "1.9",
+       "foundValue": "1.0"
+DEBUG: Found match at index 301 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "manager": "cargo",
+       "expectedValue": "1.9",
+       "foundValue": "1.0"
+DEBUG: Found match at index 312 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "manager": "cargo",
+       "expectedValue": "1.9",
+       "foundValue": "1.0"
+DEBUG: Found match at index 335 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: No locked version found for package debug-ignore in the range of 1.9. (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "manager": "cargo",
+       "expectedValue": "1.9",
+       "foundValue": "1.0"
+DEBUG: Found match at index 601 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "manager": "cargo",
+       "expectedValue": "1.9",
+       "foundValue": "1.0"
+DEBUG: Found match at index 758 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Contents updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-1.x)
+       "depName": "indexmap"
+DEBUG: updateArtifacts for updatedPackageFiles (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Updating Cargo.lock (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Setting CONTAINERBASE_CACHE_DIR to /tmp/renovate/cache/containerbase (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Using containerbase dynamic installs (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: getLabels(https://index.docker.io, library/rust, latest) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Docker Hub library image - skipping label lookup (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Resolved stable matching version (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "toolName": "rust",
+       "constraint": undefined,
+       "resolvedVersion": "1.77.2"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "command": "install-tool rust 1.77.2"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "durationMs": 16278,
+       "stdout": "[22:45:09.277] INFO (56): Installing tool rust@1.77.2...\ninstalling v2 tool rust v1.77.2\ninstall: creating uninstall script at /opt/containerbase/tools/rust/1.77.2/lib/rustlib/uninstall.sh\ninstall: installing component 'cargo'\ninstall: installing component 'rust-std-x86_64-unknown-linux-gnu'\ninstall: installing component 'rustc'\ninstall: WARNING: failed to run ldconfig. this may happen when not installing as root. run with --verbose to see the error\n\n    rust installed.\n\nlinking tool rust v1.77.2\ncargo 1.77.2 (e52e36006 2024-03-26)\nrustc 1.77.2 (25ef9e3d8 2024-04-09)\n[22:45:24.521] INFO (56): Installed tool rust in 15.2s.\n",
+       "stderr": ""
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --workspace"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "durationMs": 335,
+       "stdout": "",
+       "stderr": "    Updating crates.io index\n"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package indexmap@1.9.3 --precise 1.9.3"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "durationMs": 90,
+       "stdout": "",
+       "stderr": "    Updating crates.io index\n"
+DEBUG: Returning updated Cargo.lock (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Updated 1 package files (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Updated 1 lock files (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "updatedArtifacts": ["Cargo.lock"]
+DEBUG: 2 file(s) to commit (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Preparing files for committing to branch renovate/indexmap-1.x (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Setting git author name: Renovate Bot (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Setting git author email: renovate@whitesourcesoftware.com (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: git commit (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/indexmap-1.x",
+         "commit": "b82e5aa03d07ff0234c340ab6b2a891df18d3b44",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
+       }
+DEBUG: Pushing refSpec renovate/indexmap-1.x:renovate/indexmap-1.x (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: git push (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "result": {
+         "pushed": [
+           {
+             "deleted": false,
+             "tag": false,
+             "branch": true,
+             "new": true,
+             "alreadyUpdated": false,
+             "local": "refs/heads/renovate/indexmap-1.x",
+             "remote": "refs/heads/renovate/indexmap-1.x"
+           }
+         ],
+         "ref": {"local": "refs/remotes/origin/renovate/indexmap-1.x"},
+         "remoteMessages": {
+           "all": [
+             "Create a pull request for 'renovate/indexmap-1.x' on GitHub by visiting:",
+             "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/indexmap-1.x"
+           ],
+           "pullRequestUrl": "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/indexmap-1.x"
+         }
+       }
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+ INFO: Branch created (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "commitSha": "b82e5aa03d07ff0234c340ab6b2a891df18d3b44"
+DEBUG: Ensuring PR (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: There are 0 errors and 0 warnings (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: getBranchPr(renovate/indexmap-1.x) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: findPr(renovate/indexmap-1.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: findPr(renovate/indexmap-1.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "prTitle": "Update Rust crate indexmap to 1.9"
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "title": "Update Rust crate indexmap to 1.9",
+       "head": "sunshowers:renovate/indexmap-1.x",
+       "base": "main",
+       "draft": false
+DEBUG: PR created (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "pr": 1,
+       "draft": false
+DEBUG: Adding labels '' to #1 (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+ INFO: PR created (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+       "pr": 1,
+       "prTitle": "Update Rust crate indexmap to 1.9"
+DEBUG: addParticipants(pr=1) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: setPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: Created Pull Request #1 (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: PR is not configured for automerge (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: setBranchCommit() (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-1.x)
+DEBUG: syncBranchState() (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: getBranchPr(renovate/libc-0.x) (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: findPr(renovate/libc-0.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: findPr(renovate/libc-0.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: branchExists=false (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: findPr(renovate/libc-0.x, Update Rust crate libc to 0.2.153, !open) (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: prAlreadyExisted=false (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Checking schedule(at any time, null) (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: No schedule defined (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Branch needs creating (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Using reuseExistingBranch: false (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Starting search at index 1098 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/libc-0.x)
+       "depName": "libc"
+DEBUG: Found match at index 1098 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/libc-0.x)
+       "depName": "libc"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/libc-0.x)
+       "manager": "cargo",
+       "expectedValue": "0.2.153",
+       "foundValue": "0.2.140"
+DEBUG: Found match at index 1128 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/libc-0.x)
+       "depName": "libc"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: No locked version found for package libc in the range of 0.2.153. (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Contents updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/libc-0.x)
+       "depName": "libc"
+DEBUG: updateArtifacts for updatedPackageFiles (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Updating Cargo.lock (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Setting CONTAINERBASE_CACHE_DIR to /tmp/renovate/cache/containerbase (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Using containerbase dynamic installs (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Resolved stable matching version (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "toolName": "rust",
+       "constraint": undefined,
+       "resolvedVersion": "1.77.2"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "command": "install-tool rust 1.77.2"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "durationMs": 125,
+       "stdout": "[22:45:28.153] INFO (3448): Installing tool rust@1.77.2...\ntool rust v1.77.2 is already installed\ntool is already linked: rust v1.77.2\n[22:45:28.173] INFO (3448): Installed tool rust in 20ms.\n",
+       "stderr": ""
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --workspace"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "durationMs": 106,
+       "stdout": "",
+       "stderr": "    Updating crates.io index\n    Updating libc v0.2.140 -> v0.2.153\n"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package libc@0.2.140 --precise 0.2.153"
+DEBUG: rawExec err (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "err": {
+         "cmd": "/bin/sh -c cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package libc@0.2.140 --precise 0.2.153",
+         "stderr": "error: package ID specification `libc@0.2.140` did not match any packages\nDid you mean one of these?\n\n  libc@0.2.153\n",
+         "stdout": "",
+         "options": {
+           "cwd": "/tmp/renovate/repos/github/sunshowers/renovate-test-2",
+           "encoding": "utf-8",
+           "env": {
+             "GIT_CONFIG_KEY_0": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_0": "ssh://**redacted**@github.com/",
+             "GIT_CONFIG_KEY_1": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_1": "git@github.com:",
+             "GIT_CONFIG_KEY_2": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_2": "https://github.com/",
+             "GIT_CONFIG_COUNT": "3",
+             "HOME": "/home/ubuntu",
+             "PATH": "/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+             "LC_ALL": "C.UTF-8",
+             "LANG": "C.UTF-8",
+             "CONTAINERBASE_CACHE_DIR": "/tmp/renovate/cache/containerbase"
+           },
+           "maxBuffer": 10485760,
+           "timeout": 900000
+         },
+         "exitCode": 101,
+         "name": "ExecError",
+         "message": "Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package libc@0.2.140 --precise 0.2.153\nerror: package ID specification `libc@0.2.140` did not match any packages\nDid you mean one of these?\n\n  libc@0.2.153\n",
+         "stack": "ExecError: Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package libc@0.2.140 --precise 0.2.153\nerror: package ID specification `libc@0.2.140` did not match any packages\nDid you mean one of these?\n\n  libc@0.2.153\n\n    at ChildProcess.<anonymous> (/usr/local/renovate/lib/util/exec/common.ts:99:11)\n    at ChildProcess.emit (node:events:529:35)\n    at ChildProcess.emit (node:domain:489:12)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:292:12)"
+       },
+       "durationMs": 13
+DEBUG: Dependency already up to date - reattempting recursively (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: No more dependencies to update (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Updated 1 package files (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Updated 1 lock files (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "updatedArtifacts": ["Cargo.lock"]
+DEBUG: 2 file(s) to commit (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Preparing files for committing to branch renovate/libc-0.x (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: git commit (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/libc-0.x",
+         "commit": "8e914d1b16e7ad89fa49a63e51714b82efead8b3",
+         "root": false,
+         "summary": {"changes": 2, "insertions": 3, "deletions": 0}
+       }
+DEBUG: Pushing refSpec renovate/libc-0.x:renovate/libc-0.x (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: git push (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "result": {
+         "pushed": [
+           {
+             "deleted": false,
+             "tag": false,
+             "branch": true,
+             "new": true,
+             "alreadyUpdated": false,
+             "local": "refs/heads/renovate/libc-0.x",
+             "remote": "refs/heads/renovate/libc-0.x"
+           }
+         ],
+         "ref": {"local": "refs/remotes/origin/renovate/libc-0.x"},
+         "remoteMessages": {
+           "all": [
+             "Create a pull request for 'renovate/libc-0.x' on GitHub by visiting:",
+             "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/libc-0.x"
+           ],
+           "pullRequestUrl": "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/libc-0.x"
+         }
+       }
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+ INFO: Branch created (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "commitSha": "8e914d1b16e7ad89fa49a63e51714b82efead8b3"
+DEBUG: Ensuring PR (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: There are 0 errors and 0 warnings (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: getBranchPr(renovate/libc-0.x) (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: findPr(renovate/libc-0.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: findPr(renovate/libc-0.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Fetching changelog: https://github.com/rust-lang/libc (0.2.140 -> 0.2.153) (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "prTitle": "Update Rust crate libc to 0.2.153"
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "title": "Update Rust crate libc to 0.2.153",
+       "head": "sunshowers:renovate/libc-0.x",
+       "base": "main",
+       "draft": false
+DEBUG: PR created (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "pr": 2,
+       "draft": false
+DEBUG: Adding labels '' to #2 (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+ INFO: PR created (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+       "pr": 2,
+       "prTitle": "Update Rust crate libc to 0.2.153"
+DEBUG: addParticipants(pr=2) (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: setPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: Created Pull Request #2 (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: PR is not configured for automerge (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: setBranchCommit() (repository=sunshowers/renovate-test-2, branch=renovate/libc-0.x)
+DEBUG: syncBranchState() (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: getBranchPr(renovate/base64-0.x) (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: findPr(renovate/base64-0.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: findPr(renovate/base64-0.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: branchExists=false (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: findPr(renovate/base64-0.x, Update Rust crate base64 to 0.22.0, !open) (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: prAlreadyExisted=false (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Checking schedule(at any time, null) (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: No schedule defined (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Branch needs creating (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Using reuseExistingBranch: false (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Starting search at index 1362 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/base64-0.x)
+       "depName": "base64"
+DEBUG: Found match at index 1362 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/base64-0.x)
+       "depName": "base64"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/base64-0.x)
+       "manager": "cargo",
+       "expectedValue": "0.22.0",
+       "foundValue": "0.21.0"
+DEBUG: Found match at index 1392 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/base64-0.x)
+       "depName": "base64"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: No locked version found for package base64 in the range of 0.22.0. (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Contents updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/base64-0.x)
+       "depName": "base64"
+DEBUG: updateArtifacts for updatedPackageFiles (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Updating Cargo.lock (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Setting CONTAINERBASE_CACHE_DIR to /tmp/renovate/cache/containerbase (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Using containerbase dynamic installs (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Resolved stable matching version (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "toolName": "rust",
+       "constraint": undefined,
+       "resolvedVersion": "1.77.2"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "command": "install-tool rust 1.77.2"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "durationMs": 120,
+       "stdout": "[22:45:33.716] INFO (3515): Installing tool rust@1.77.2...\ntool rust v1.77.2 is already installed\ntool is already linked: rust v1.77.2\n[22:45:33.737] INFO (3515): Installed tool rust in 21ms.\n",
+       "stderr": ""
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --workspace"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "durationMs": 112,
+       "stdout": "",
+       "stderr": "    Updating crates.io index\n    Updating base64 v0.21.7 -> v0.22.0\n"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package base64@0.21.7 --precise 0.22.0"
+DEBUG: rawExec err (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "err": {
+         "cmd": "/bin/sh -c cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package base64@0.21.7 --precise 0.22.0",
+         "stderr": "error: package ID specification `base64@0.21.7` did not match any packages\nDid you mean one of these?\n\n  base64@0.22.0\n",
+         "stdout": "",
+         "options": {
+           "cwd": "/tmp/renovate/repos/github/sunshowers/renovate-test-2",
+           "encoding": "utf-8",
+           "env": {
+             "GIT_CONFIG_KEY_0": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_0": "ssh://**redacted**@github.com/",
+             "GIT_CONFIG_KEY_1": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_1": "git@github.com:",
+             "GIT_CONFIG_KEY_2": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_2": "https://github.com/",
+             "GIT_CONFIG_COUNT": "3",
+             "HOME": "/home/ubuntu",
+             "PATH": "/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+             "LC_ALL": "C.UTF-8",
+             "LANG": "C.UTF-8",
+             "CONTAINERBASE_CACHE_DIR": "/tmp/renovate/cache/containerbase"
+           },
+           "maxBuffer": 10485760,
+           "timeout": 900000
+         },
+         "exitCode": 101,
+         "name": "ExecError",
+         "message": "Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package base64@0.21.7 --precise 0.22.0\nerror: package ID specification `base64@0.21.7` did not match any packages\nDid you mean one of these?\n\n  base64@0.22.0\n",
+         "stack": "ExecError: Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package base64@0.21.7 --precise 0.22.0\nerror: package ID specification `base64@0.21.7` did not match any packages\nDid you mean one of these?\n\n  base64@0.22.0\n\n    at ChildProcess.<anonymous> (/usr/local/renovate/lib/util/exec/common.ts:99:11)\n    at ChildProcess.emit (node:events:529:35)\n    at ChildProcess.emit (node:domain:489:12)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:292:12)"
+       },
+       "durationMs": 14
+DEBUG: Dependency already up to date - reattempting recursively (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: No more dependencies to update (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Updated 1 package files (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Updated 1 lock files (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "updatedArtifacts": ["Cargo.lock"]
+DEBUG: 2 file(s) to commit (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Preparing files for committing to branch renovate/base64-0.x (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: git commit (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/base64-0.x",
+         "commit": "1f58cf542180939491d71dad8cb7d8b77fabf8c3",
+         "root": false,
+         "summary": {"changes": 2, "insertions": 3, "deletions": 3}
+       }
+DEBUG: Pushing refSpec renovate/base64-0.x:renovate/base64-0.x (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: git push (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "result": {
+         "pushed": [
+           {
+             "deleted": false,
+             "tag": false,
+             "branch": true,
+             "new": true,
+             "alreadyUpdated": false,
+             "local": "refs/heads/renovate/base64-0.x",
+             "remote": "refs/heads/renovate/base64-0.x"
+           }
+         ],
+         "ref": {"local": "refs/remotes/origin/renovate/base64-0.x"},
+         "remoteMessages": {
+           "all": [
+             "Create a pull request for 'renovate/base64-0.x' on GitHub by visiting:",
+             "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/base64-0.x"
+           ],
+           "pullRequestUrl": "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/base64-0.x"
+         }
+       }
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+ INFO: Branch created (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "commitSha": "1f58cf542180939491d71dad8cb7d8b77fabf8c3"
+DEBUG: Ensuring PR (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: There are 0 errors and 0 warnings (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: getBranchPr(renovate/base64-0.x) (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: findPr(renovate/base64-0.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: findPr(renovate/base64-0.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Fetching changelog: https://github.com/marshallpierce/rust-base64 (0.21.7 -> 0.22.0) (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "prTitle": "Update Rust crate base64 to 0.22.0"
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "title": "Update Rust crate base64 to 0.22.0",
+       "head": "sunshowers:renovate/base64-0.x",
+       "base": "main",
+       "draft": false
+DEBUG: PR created (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "pr": 3,
+       "draft": false
+DEBUG: Adding labels '' to #3 (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+ INFO: PR created (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+       "pr": 3,
+       "prTitle": "Update Rust crate base64 to 0.22.0"
+DEBUG: addParticipants(pr=3) (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: setPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: Created Pull Request #3 (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: PR is not configured for automerge (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: setBranchCommit() (repository=sunshowers/renovate-test-2, branch=renovate/base64-0.x)
+DEBUG: syncBranchState() (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: getBranchPr(renovate/bitflags-2.x) (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: findPr(renovate/bitflags-2.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: findPr(renovate/bitflags-2.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: branchExists=false (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: findPr(renovate/bitflags-2.x, Update Rust crate bitflags to 2.5.0, !open) (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: prAlreadyExisted=false (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Checking schedule(at any time, null) (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: No schedule defined (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Branch needs creating (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Using reuseExistingBranch: false (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Starting search at index 978 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/bitflags-2.x)
+       "depName": "bitflags"
+DEBUG: Found match at index 978 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/bitflags-2.x)
+       "depName": "bitflags"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/bitflags-2.x)
+       "manager": "cargo",
+       "expectedValue": "2.5.0",
+       "foundValue": "2.4.0"
+DEBUG: Found match at index 1006 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/bitflags-2.x)
+       "depName": "bitflags"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: No locked version found for package bitflags in the range of 2.5.0. (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Contents updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/bitflags-2.x)
+       "depName": "bitflags"
+DEBUG: updateArtifacts for updatedPackageFiles (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Updating Cargo.lock (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Setting CONTAINERBASE_CACHE_DIR to /tmp/renovate/cache/containerbase (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Using containerbase dynamic installs (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Resolved stable matching version (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "toolName": "rust",
+       "constraint": undefined,
+       "resolvedVersion": "1.77.2"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "command": "install-tool rust 1.77.2"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "durationMs": 120,
+       "stdout": "[22:45:38.291] INFO (3582): Installing tool rust@1.77.2...\ntool rust v1.77.2 is already installed\ntool is already linked: rust v1.77.2\n[22:45:38.311] INFO (3582): Installed tool rust in 20ms.\n",
+       "stderr": ""
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --workspace"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "durationMs": 110,
+       "stdout": "",
+       "stderr": "    Updating crates.io index\n    Updating bitflags v2.4.0 -> v2.5.0\n"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package bitflags@2.4.0 --precise 2.5.0"
+DEBUG: rawExec err (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "err": {
+         "cmd": "/bin/sh -c cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package bitflags@2.4.0 --precise 2.5.0",
+         "stderr": "error: package ID specification `bitflags@2.4.0` did not match any packages\nDid you mean one of these?\n\n  bitflags@2.5.0\n",
+         "stdout": "",
+         "options": {
+           "cwd": "/tmp/renovate/repos/github/sunshowers/renovate-test-2",
+           "encoding": "utf-8",
+           "env": {
+             "GIT_CONFIG_KEY_0": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_0": "ssh://**redacted**@github.com/",
+             "GIT_CONFIG_KEY_1": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_1": "git@github.com:",
+             "GIT_CONFIG_KEY_2": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_2": "https://github.com/",
+             "GIT_CONFIG_COUNT": "3",
+             "HOME": "/home/ubuntu",
+             "PATH": "/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+             "LC_ALL": "C.UTF-8",
+             "LANG": "C.UTF-8",
+             "CONTAINERBASE_CACHE_DIR": "/tmp/renovate/cache/containerbase"
+           },
+           "maxBuffer": 10485760,
+           "timeout": 900000
+         },
+         "exitCode": 101,
+         "name": "ExecError",
+         "message": "Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package bitflags@2.4.0 --precise 2.5.0\nerror: package ID specification `bitflags@2.4.0` did not match any packages\nDid you mean one of these?\n\n  bitflags@2.5.0\n",
+         "stack": "ExecError: Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package bitflags@2.4.0 --precise 2.5.0\nerror: package ID specification `bitflags@2.4.0` did not match any packages\nDid you mean one of these?\n\n  bitflags@2.5.0\n\n    at ChildProcess.<anonymous> (/usr/local/renovate/lib/util/exec/common.ts:99:11)\n    at ChildProcess.emit (node:events:529:35)\n    at ChildProcess.emit (node:domain:489:12)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:292:12)"
+       },
+       "durationMs": 13
+DEBUG: Dependency already up to date - reattempting recursively (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: No more dependencies to update (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Updated 1 package files (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Updated 1 lock files (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "updatedArtifacts": ["Cargo.lock"]
+DEBUG: 2 file(s) to commit (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Preparing files for committing to branch renovate/bitflags-2.x (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: git commit (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/bitflags-2.x",
+         "commit": "f8785443e4eb94f892d904aaa2bb0d3cc61a9bd5",
+         "root": false,
+         "summary": {"changes": 2, "insertions": 3, "deletions": 0}
+       }
+DEBUG: Pushing refSpec renovate/bitflags-2.x:renovate/bitflags-2.x (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: git push (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "result": {
+         "pushed": [
+           {
+             "deleted": false,
+             "tag": false,
+             "branch": true,
+             "new": true,
+             "alreadyUpdated": false,
+             "local": "refs/heads/renovate/bitflags-2.x",
+             "remote": "refs/heads/renovate/bitflags-2.x"
+           }
+         ],
+         "ref": {"local": "refs/remotes/origin/renovate/bitflags-2.x"},
+         "remoteMessages": {
+           "all": [
+             "Create a pull request for 'renovate/bitflags-2.x' on GitHub by visiting:",
+             "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/bitflags-2.x"
+           ],
+           "pullRequestUrl": "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/bitflags-2.x"
+         }
+       }
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+ INFO: Branch created (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "commitSha": "f8785443e4eb94f892d904aaa2bb0d3cc61a9bd5"
+DEBUG: Ensuring PR (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: There are 0 errors and 0 warnings (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: getBranchPr(renovate/bitflags-2.x) (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: findPr(renovate/bitflags-2.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: findPr(renovate/bitflags-2.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Fetching changelog: https://github.com/bitflags/bitflags (2.4.0 -> 2.5.0) (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "prTitle": "Update Rust crate bitflags to 2.5.0"
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "title": "Update Rust crate bitflags to 2.5.0",
+       "head": "sunshowers:renovate/bitflags-2.x",
+       "base": "main",
+       "draft": false
+DEBUG: PR created (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "pr": 4,
+       "draft": false
+DEBUG: Adding labels '' to #4 (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+ INFO: PR created (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+       "pr": 4,
+       "prTitle": "Update Rust crate bitflags to 2.5.0"
+DEBUG: addParticipants(pr=4) (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: setPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: Created Pull Request #4 (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: PR is not configured for automerge (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: setBranchCommit() (repository=sunshowers/renovate-test-2, branch=renovate/bitflags-2.x)
+DEBUG: syncBranchState() (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: getBranchPr(renovate/time-0.x) (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: findPr(renovate/time-0.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: findPr(renovate/time-0.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: branchExists=false (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: findPr(renovate/time-0.x, Update Rust crate time to 0.3, !open) (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: prAlreadyExisted=false (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Checking schedule(at any time, null) (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: No schedule defined (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Branch needs creating (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Using reuseExistingBranch: false (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Starting search at index 846 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/time-0.x)
+       "depName": "time"
+DEBUG: Found match at index 846 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/time-0.x)
+       "depName": "time"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/time-0.x)
+       "manager": "cargo",
+       "expectedValue": "0.3",
+       "foundValue": "0.2"
+DEBUG: Found match at index 872 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/time-0.x)
+       "depName": "time"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: No locked version found for package time in the range of 0.3. (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Contents updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/time-0.x)
+       "depName": "time"
+DEBUG: updateArtifacts for updatedPackageFiles (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Updating Cargo.lock (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Setting CONTAINERBASE_CACHE_DIR to /tmp/renovate/cache/containerbase (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Using containerbase dynamic installs (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Resolved stable matching version (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "toolName": "rust",
+       "constraint": undefined,
+       "resolvedVersion": "1.77.2"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "command": "install-tool rust 1.77.2"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "durationMs": 116,
+       "stdout": "[22:45:42.555] INFO (3649): Installing tool rust@1.77.2...\ntool rust v1.77.2 is already installed\ntool is already linked: rust v1.77.2\n[22:45:42.575] INFO (3649): Installed tool rust in 20ms.\n",
+       "stderr": ""
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --workspace"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "durationMs": 91,
+       "stdout": "",
+       "stderr": "    Updating crates.io index\n    Removing base-x v0.2.11\n    Removing const_fn v0.4.9\n      Adding deranged v0.3.11\n    Removing discard v1.0.4\n    Removing itoa v1.0.11\n      Adding num-conv v0.1.0\n      Adding powerfmt v0.2.0\n    Removing proc-macro-hack v0.5.20+deprecated\n    Removing rustc_version v0.2.3\n    Removing ryu v1.0.17\n    Removing semver v0.9.0\n    Removing semver-parser v0.7.0\n    Removing serde_json v1.0.115\n    Removing sha1 v0.6.1\n    Removing sha1_smol v1.0.0\n    Removing standback v0.2.17\n    Removing stdweb v0.4.20\n    Removing stdweb-derive v0.5.3\n    Removing stdweb-internal-macros v0.2.9\n    Removing stdweb-internal-runtime v0.1.5\n    Updating time v0.2.27 -> v0.3.35\n      Adding time-core v0.1.2\n    Removing time-macros v0.1.1\n    Removing time-macros-impl v0.1.2\n    Removing version_check v0.9.4\n    Removing winapi v0.3.9\n    Removing winapi-i686-pc-windows-gnu v0.4.0\n    Removing winapi-x86_64-pc-windows-gnu v0.4.0\n"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package time@0.2.27 --precise 0.3.35"
+DEBUG: rawExec err (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "err": {
+         "cmd": "/bin/sh -c cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package time@0.2.27 --precise 0.3.35",
+         "stderr": "error: package ID specification `time@0.2.27` did not match any packages\nDid you mean one of these?\n\n  time@0.3.35\n",
+         "stdout": "",
+         "options": {
+           "cwd": "/tmp/renovate/repos/github/sunshowers/renovate-test-2",
+           "encoding": "utf-8",
+           "env": {
+             "GIT_CONFIG_KEY_0": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_0": "ssh://**redacted**@github.com/",
+             "GIT_CONFIG_KEY_1": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_1": "git@github.com:",
+             "GIT_CONFIG_KEY_2": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_2": "https://github.com/",
+             "GIT_CONFIG_COUNT": "3",
+             "HOME": "/home/ubuntu",
+             "PATH": "/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+             "LC_ALL": "C.UTF-8",
+             "LANG": "C.UTF-8",
+             "CONTAINERBASE_CACHE_DIR": "/tmp/renovate/cache/containerbase"
+           },
+           "maxBuffer": 10485760,
+           "timeout": 900000
+         },
+         "exitCode": 101,
+         "name": "ExecError",
+         "message": "Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package time@0.2.27 --precise 0.3.35\nerror: package ID specification `time@0.2.27` did not match any packages\nDid you mean one of these?\n\n  time@0.3.35\n",
+         "stack": "ExecError: Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package time@0.2.27 --precise 0.3.35\nerror: package ID specification `time@0.2.27` did not match any packages\nDid you mean one of these?\n\n  time@0.3.35\n\n    at ChildProcess.<anonymous> (/usr/local/renovate/lib/util/exec/common.ts:99:11)\n    at ChildProcess.emit (node:events:529:35)\n    at ChildProcess.emit (node:domain:489:12)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:292:12)"
+       },
+       "durationMs": 11
+DEBUG: Dependency already up to date - reattempting recursively (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: No more dependencies to update (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Updated 1 package files (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Updated 1 lock files (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "updatedArtifacts": ["Cargo.lock"]
+DEBUG: 2 file(s) to commit (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Preparing files for committing to branch renovate/time-0.x (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: git commit (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/time-0.x",
+         "commit": "3c452c648c65d1f04e12ca85045ee0859b6aad6e",
+         "root": false,
+         "summary": {"changes": 2, "insertions": 25, "deletions": 195}
+       }
+DEBUG: Pushing refSpec renovate/time-0.x:renovate/time-0.x (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: git push (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "result": {
+         "pushed": [
+           {
+             "deleted": false,
+             "tag": false,
+             "branch": true,
+             "new": true,
+             "alreadyUpdated": false,
+             "local": "refs/heads/renovate/time-0.x",
+             "remote": "refs/heads/renovate/time-0.x"
+           }
+         ],
+         "ref": {"local": "refs/remotes/origin/renovate/time-0.x"},
+         "remoteMessages": {
+           "all": [
+             "Create a pull request for 'renovate/time-0.x' on GitHub by visiting:",
+             "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/time-0.x"
+           ],
+           "pullRequestUrl": "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/time-0.x"
+         }
+       }
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+ INFO: Branch created (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "commitSha": "3c452c648c65d1f04e12ca85045ee0859b6aad6e"
+DEBUG: Ensuring PR (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: There are 0 errors and 0 warnings (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: getBranchPr(renovate/time-0.x) (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: findPr(renovate/time-0.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: findPr(renovate/time-0.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Fetching changelog: https://github.com/time-rs/time (0.2.27 -> 0.3.35) (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "prTitle": "Update Rust crate time to 0.3"
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "title": "Update Rust crate time to 0.3",
+       "head": "sunshowers:renovate/time-0.x",
+       "base": "main",
+       "draft": false
+DEBUG: PR created (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "pr": 5,
+       "draft": false
+DEBUG: Adding labels '' to #5 (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+ INFO: PR created (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+       "pr": 5,
+       "prTitle": "Update Rust crate time to 0.3"
+DEBUG: addParticipants(pr=5) (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: setPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: Created Pull Request #5 (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: PR is not configured for automerge (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: setBranchCommit() (repository=sunshowers/renovate-test-2, branch=renovate/time-0.x)
+DEBUG: syncBranchState() (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: getBranchPr(renovate/fastrand-2.x) (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: findPr(renovate/fastrand-2.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: findPr(renovate/fastrand-2.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: branchExists=false (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: findPr(renovate/fastrand-2.x, Update Rust crate fastrand to v2, !open) (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: prAlreadyExisted=false (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Checking schedule(at any time, null) (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: No schedule defined (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Branch needs creating (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Using reuseExistingBranch: false (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Starting search at index 1240 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/fastrand-2.x)
+       "depName": "fastrand"
+DEBUG: Found match at index 1240 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/fastrand-2.x)
+       "depName": "fastrand"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/fastrand-2.x)
+       "manager": "cargo",
+       "expectedValue": "2.0.2",
+       "foundValue": "1.9.0"
+DEBUG: Found match at index 1268 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/fastrand-2.x)
+       "depName": "fastrand"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: No locked version found for package fastrand in the range of 2.0.2. (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Contents updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/fastrand-2.x)
+       "depName": "fastrand"
+DEBUG: updateArtifacts for updatedPackageFiles (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Updating Cargo.lock (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Setting CONTAINERBASE_CACHE_DIR to /tmp/renovate/cache/containerbase (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Using containerbase dynamic installs (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Resolved stable matching version (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "toolName": "rust",
+       "constraint": undefined,
+       "resolvedVersion": "1.77.2"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "command": "install-tool rust 1.77.2"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "durationMs": 131,
+       "stdout": "[22:45:47.840] INFO (3716): Installing tool rust@1.77.2...\ntool rust v1.77.2 is already installed\ntool is already linked: rust v1.77.2\n[22:45:47.862] INFO (3716): Installed tool rust in 22ms.\n",
+       "stderr": ""
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --workspace"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "durationMs": 108,
+       "stdout": "",
+       "stderr": "    Updating crates.io index\n    Updating fastrand v1.9.0 -> v2.0.2\n    Removing instant v0.1.12\n"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package fastrand@1.9.0 --precise 2.0.2"
+DEBUG: rawExec err (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "err": {
+         "cmd": "/bin/sh -c cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package fastrand@1.9.0 --precise 2.0.2",
+         "stderr": "error: package ID specification `fastrand@1.9.0` did not match any packages\nDid you mean one of these?\n\n  fastrand@2.0.2\n",
+         "stdout": "",
+         "options": {
+           "cwd": "/tmp/renovate/repos/github/sunshowers/renovate-test-2",
+           "encoding": "utf-8",
+           "env": {
+             "GIT_CONFIG_KEY_0": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_0": "ssh://**redacted**@github.com/",
+             "GIT_CONFIG_KEY_1": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_1": "git@github.com:",
+             "GIT_CONFIG_KEY_2": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_2": "https://github.com/",
+             "GIT_CONFIG_COUNT": "3",
+             "HOME": "/home/ubuntu",
+             "PATH": "/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+             "LC_ALL": "C.UTF-8",
+             "LANG": "C.UTF-8",
+             "CONTAINERBASE_CACHE_DIR": "/tmp/renovate/cache/containerbase"
+           },
+           "maxBuffer": 10485760,
+           "timeout": 900000
+         },
+         "exitCode": 101,
+         "name": "ExecError",
+         "message": "Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package fastrand@1.9.0 --precise 2.0.2\nerror: package ID specification `fastrand@1.9.0` did not match any packages\nDid you mean one of these?\n\n  fastrand@2.0.2\n",
+         "stack": "ExecError: Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package fastrand@1.9.0 --precise 2.0.2\nerror: package ID specification `fastrand@1.9.0` did not match any packages\nDid you mean one of these?\n\n  fastrand@2.0.2\n\n    at ChildProcess.<anonymous> (/usr/local/renovate/lib/util/exec/common.ts:99:11)\n    at ChildProcess.emit (node:events:529:35)\n    at ChildProcess.emit (node:domain:489:12)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:292:12)"
+       },
+       "durationMs": 15
+DEBUG: Dependency already up to date - reattempting recursively (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: No more dependencies to update (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Updated 1 package files (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Updated 1 lock files (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "updatedArtifacts": ["Cargo.lock"]
+DEBUG: 2 file(s) to commit (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Preparing files for committing to branch renovate/fastrand-2.x (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: git commit (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/fastrand-2.x",
+         "commit": "d86c2958b43591af417ed589a0e019705a1a7e1d",
+         "root": false,
+         "summary": {"changes": 2, "insertions": 3, "deletions": 0}
+       }
+DEBUG: Pushing refSpec renovate/fastrand-2.x:renovate/fastrand-2.x (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: git push (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "result": {
+         "pushed": [
+           {
+             "deleted": false,
+             "tag": false,
+             "branch": true,
+             "new": true,
+             "alreadyUpdated": false,
+             "local": "refs/heads/renovate/fastrand-2.x",
+             "remote": "refs/heads/renovate/fastrand-2.x"
+           }
+         ],
+         "ref": {"local": "refs/remotes/origin/renovate/fastrand-2.x"},
+         "remoteMessages": {
+           "all": [
+             "Create a pull request for 'renovate/fastrand-2.x' on GitHub by visiting:",
+             "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/fastrand-2.x"
+           ],
+           "pullRequestUrl": "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/fastrand-2.x"
+         }
+       }
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+ INFO: Branch created (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "commitSha": "d86c2958b43591af417ed589a0e019705a1a7e1d"
+DEBUG: Ensuring PR (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: There are 0 errors and 0 warnings (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: getBranchPr(renovate/fastrand-2.x) (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: findPr(renovate/fastrand-2.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: findPr(renovate/fastrand-2.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Fetching changelog: https://github.com/smol-rs/fastrand (1.9.0 -> 2.0.2) (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "prTitle": "Update Rust crate fastrand to v2"
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "title": "Update Rust crate fastrand to v2",
+       "head": "sunshowers:renovate/fastrand-2.x",
+       "base": "main",
+       "draft": false
+DEBUG: PR created (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "pr": 6,
+       "draft": false
+DEBUG: Adding labels '' to #6 (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+ INFO: PR created (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+       "pr": 6,
+       "prTitle": "Update Rust crate fastrand to v2"
+DEBUG: addParticipants(pr=6) (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: setPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: Created Pull Request #6 (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: PR is not configured for automerge (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: setBranchCommit() (repository=sunshowers/renovate-test-2, branch=renovate/fastrand-2.x)
+DEBUG: syncBranchState() (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: getBranchPr(renovate/indexmap-2.x) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: findPr(renovate/indexmap-2.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: findPr(renovate/indexmap-2.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: branchExists=false (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: findPr(renovate/indexmap-2.x, Update Rust crate indexmap to v2, !open) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: prAlreadyExisted=false (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Checking schedule(at any time, null) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: No schedule defined (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Branch needs creating (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Using reuseExistingBranch: false (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Starting search at index 48 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "depName": "indexmap"
+DEBUG: Found match at index 48 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "manager": "cargo",
+       "expectedValue": "2.2",
+       "foundValue": "1.0"
+DEBUG: Found match at index 176 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "manager": "cargo",
+       "expectedValue": "2.2",
+       "foundValue": "1.0"
+DEBUG: Found match at index 301 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "manager": "cargo",
+       "expectedValue": "2.2",
+       "foundValue": "1.0"
+DEBUG: Found match at index 312 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "manager": "cargo",
+       "expectedValue": "2.2",
+       "foundValue": "1.0"
+DEBUG: Found match at index 335 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: No locked version found for package debug-ignore in the range of 2.2. (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "manager": "cargo",
+       "expectedValue": "2.2",
+       "foundValue": "1.0"
+DEBUG: Found match at index 601 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "manager": "cargo",
+       "expectedValue": "2.2",
+       "foundValue": "1.0"
+DEBUG: Found match at index 758 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "depName": "indexmap"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: No locked version found for package indexmap in the range of 2.2. (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Contents updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/indexmap-2.x)
+       "depName": "indexmap"
+DEBUG: updateArtifacts for updatedPackageFiles (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Updating Cargo.lock (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Setting CONTAINERBASE_CACHE_DIR to /tmp/renovate/cache/containerbase (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Using containerbase dynamic installs (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Resolved stable matching version (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "toolName": "rust",
+       "constraint": undefined,
+       "resolvedVersion": "1.77.2"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "command": "install-tool rust 1.77.2"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "durationMs": 120,
+       "stdout": "[22:45:52.007] INFO (3783): Installing tool rust@1.77.2...\ntool rust v1.77.2 is already installed\ntool is already linked: rust v1.77.2\n[22:45:52.027] INFO (3783): Installed tool rust in 20ms.\n",
+       "stderr": ""
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --workspace"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "durationMs": 112,
+       "stdout": "",
+       "stderr": "    Updating crates.io index\n      Adding equivalent v1.0.1\n    Updating hashbrown v0.12.3 -> v0.14.3\n    Updating indexmap v1.9.3 -> v2.2.6\n"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package indexmap@1.9.3 --precise 2.2.6"
+DEBUG: rawExec err (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "err": {
+         "cmd": "/bin/sh -c cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package indexmap@1.9.3 --precise 2.2.6",
+         "stderr": "error: package ID specification `indexmap@1.9.3` did not match any packages\nDid you mean one of these?\n\n  indexmap@2.2.6\n",
+         "stdout": "",
+         "options": {
+           "cwd": "/tmp/renovate/repos/github/sunshowers/renovate-test-2",
+           "encoding": "utf-8",
+           "env": {
+             "GIT_CONFIG_KEY_0": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_0": "ssh://**redacted**@github.com/",
+             "GIT_CONFIG_KEY_1": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_1": "git@github.com:",
+             "GIT_CONFIG_KEY_2": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_2": "https://github.com/",
+             "GIT_CONFIG_COUNT": "3",
+             "HOME": "/home/ubuntu",
+             "PATH": "/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+             "LC_ALL": "C.UTF-8",
+             "LANG": "C.UTF-8",
+             "CONTAINERBASE_CACHE_DIR": "/tmp/renovate/cache/containerbase"
+           },
+           "maxBuffer": 10485760,
+           "timeout": 900000
+         },
+         "exitCode": 101,
+         "name": "ExecError",
+         "message": "Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package indexmap@1.9.3 --precise 2.2.6\nerror: package ID specification `indexmap@1.9.3` did not match any packages\nDid you mean one of these?\n\n  indexmap@2.2.6\n",
+         "stack": "ExecError: Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package indexmap@1.9.3 --precise 2.2.6\nerror: package ID specification `indexmap@1.9.3` did not match any packages\nDid you mean one of these?\n\n  indexmap@2.2.6\n\n    at ChildProcess.<anonymous> (/usr/local/renovate/lib/util/exec/common.ts:99:11)\n    at ChildProcess.emit (node:events:529:35)\n    at ChildProcess.emit (node:domain:489:12)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:292:12)"
+       },
+       "durationMs": 13
+DEBUG: Dependency already up to date - reattempting recursively (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: No more dependencies to update (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Updated 1 package files (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Updated 1 lock files (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "updatedArtifacts": ["Cargo.lock"]
+DEBUG: 2 file(s) to commit (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Preparing files for committing to branch renovate/indexmap-2.x (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: git commit (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/indexmap-2.x",
+         "commit": "b04d98c121d1d9a5dbdd0bf35cf971e717d028d5",
+         "root": false,
+         "summary": {"changes": 2, "insertions": 12, "deletions": 6}
+       }
+DEBUG: Pushing refSpec renovate/indexmap-2.x:renovate/indexmap-2.x (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: git push (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "result": {
+         "pushed": [
+           {
+             "deleted": false,
+             "tag": false,
+             "branch": true,
+             "new": true,
+             "alreadyUpdated": false,
+             "local": "refs/heads/renovate/indexmap-2.x",
+             "remote": "refs/heads/renovate/indexmap-2.x"
+           }
+         ],
+         "ref": {"local": "refs/remotes/origin/renovate/indexmap-2.x"},
+         "remoteMessages": {
+           "all": [
+             "Create a pull request for 'renovate/indexmap-2.x' on GitHub by visiting:",
+             "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/indexmap-2.x"
+           ],
+           "pullRequestUrl": "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/indexmap-2.x"
+         }
+       }
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+ INFO: Branch created (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "commitSha": "b04d98c121d1d9a5dbdd0bf35cf971e717d028d5"
+DEBUG: Ensuring PR (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: There are 0 errors and 0 warnings (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: getBranchPr(renovate/indexmap-2.x) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: findPr(renovate/indexmap-2.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: findPr(renovate/indexmap-2.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Fetching changelog: https://github.com/indexmap-rs/indexmap (1.9.3 -> 2.2.6) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "prTitle": "Update Rust crate indexmap to v2"
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "title": "Update Rust crate indexmap to v2",
+       "head": "sunshowers:renovate/indexmap-2.x",
+       "base": "main",
+       "draft": false
+DEBUG: PR created (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "pr": 7,
+       "draft": false
+DEBUG: Adding labels '' to #7 (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+ INFO: PR created (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+       "pr": 7,
+       "prTitle": "Update Rust crate indexmap to v2"
+DEBUG: addParticipants(pr=7) (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: setPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: Created Pull Request #7 (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: PR is not configured for automerge (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: setBranchCommit() (repository=sunshowers/renovate-test-2, branch=renovate/indexmap-2.x)
+DEBUG: syncBranchState() (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: syncBranchState(): Branch cache not found, creating minimal branchState (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: getBranchPr(renovate/syn-2.x) (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: findPr(renovate/syn-2.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: findPr(renovate/syn-2.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: branchExists=false (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Check for closed PR because recreating closed PRs is disabled. (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: findPr(renovate/syn-2.x, Update Rust crate syn to v2, !open) (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: prAlreadyExisted=false (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Checking schedule(at any time, null) (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: No schedule defined (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Branch needs creating (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Using reuseExistingBranch: false (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistingBranch=false (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Starting search at index 48 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Found match at index 48 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 67 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 92 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 103 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 130 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 176 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 187 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 189 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 204 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: No locked version found for package camino in the range of 2. (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 213 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 253 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 301 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 305 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 312 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 335 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: No locked version found for package debug-ignore in the range of 2.0. (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 346 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 480 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 526 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 553 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 601 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 605 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Value is not updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "manager": "cargo",
+       "expectedValue": "2",
+       "foundValue": "1"
+DEBUG: Found match at index 629 (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: Neither .cargo/config nor .cargo/config.toml found (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found lock file Cargo.lock for packageFile: Cargo.toml (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Contents updated (repository=sunshowers/renovate-test-2, packageFile=Cargo.toml, branch=renovate/syn-2.x)
+       "depName": "syn"
+DEBUG: updateArtifacts for updatedPackageFiles (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: cargo.updateArtifacts(Cargo.toml) (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Updating Cargo.lock (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Setting CONTAINERBASE_CACHE_DIR to /tmp/renovate/cache/containerbase (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Using containerbase dynamic installs (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Resolved stable matching version (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "toolName": "rust",
+       "constraint": undefined,
+       "resolvedVersion": "1.77.2"
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "command": "install-tool rust 1.77.2"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "durationMs": 113,
+       "stdout": "[22:45:56.781] INFO (3850): Installing tool rust@1.77.2...\ntool rust v1.77.2 is already installed\ntool is already linked: rust v1.77.2\n[22:45:56.800] INFO (3850): Installed tool rust in 19ms.\n",
+       "stderr": ""
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --workspace"
+DEBUG: exec completed (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "durationMs": 18,
+       "stdout": "",
+       "stderr": ""
+DEBUG: Executing command (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "command": "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package syn@1.0.100 --precise 2.0.58"
+DEBUG: rawExec err (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "err": {
+         "cmd": "/bin/sh -c cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package syn@1.0.100 --precise 2.0.58",
+         "stderr": "    Updating crates.io index\nerror: failed to select a version for the requirement `syn = \"^1\"`\ncandidate versions found which didn't match: 2.0.58\nlocation searched: crates.io index\nrequired by package `stdweb-derive v0.5.3`\n    ... which satisfies dependency `stdweb-derive = \"=0.5.3\"` (locked to 0.5.3) of package `stdweb v0.4.20`\n    ... which satisfies dependency `stdweb = \"^0.4.20\"` (locked to 0.4.20) of package `time v0.2.27`\n    ... which satisfies dependency `time = \"^0.2\"` (locked to 0.2.27) of package `renovate-test-2 v0.1.0 (/tmp/renovate/repos/github/sunshowers/renovate-test-2)`\nperhaps a crate was updated and forgotten to be re-vendored?\n",
+         "stdout": "",
+         "options": {
+           "cwd": "/tmp/renovate/repos/github/sunshowers/renovate-test-2",
+           "encoding": "utf-8",
+           "env": {
+             "GIT_CONFIG_KEY_0": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_0": "ssh://**redacted**@github.com/",
+             "GIT_CONFIG_KEY_1": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_1": "git@github.com:",
+             "GIT_CONFIG_KEY_2": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_2": "https://github.com/",
+             "GIT_CONFIG_COUNT": "3",
+             "HOME": "/home/ubuntu",
+             "PATH": "/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+             "LC_ALL": "C.UTF-8",
+             "LANG": "C.UTF-8",
+             "CONTAINERBASE_CACHE_DIR": "/tmp/renovate/cache/containerbase"
+           },
+           "maxBuffer": 10485760,
+           "timeout": 900000
+         },
+         "exitCode": 101,
+         "name": "ExecError",
+         "message": "Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package syn@1.0.100 --precise 2.0.58\n    Updating crates.io index\nerror: failed to select a version for the requirement `syn = \"^1\"`\ncandidate versions found which didn't match: 2.0.58\nlocation searched: crates.io index\nrequired by package `stdweb-derive v0.5.3`\n    ... which satisfies dependency `stdweb-derive = \"=0.5.3\"` (locked to 0.5.3) of package `stdweb v0.4.20`\n    ... which satisfies dependency `stdweb = \"^0.4.20\"` (locked to 0.4.20) of package `time v0.2.27`\n    ... which satisfies dependency `time = \"^0.2\"` (locked to 0.2.27) of package `renovate-test-2 v0.1.0 (/tmp/renovate/repos/github/sunshowers/renovate-test-2)`\nperhaps a crate was updated and forgotten to be re-vendored?\n",
+         "stack": "ExecError: Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package syn@1.0.100 --precise 2.0.58\n    Updating crates.io index\nerror: failed to select a version for the requirement `syn = \"^1\"`\ncandidate versions found which didn't match: 2.0.58\nlocation searched: crates.io index\nrequired by package `stdweb-derive v0.5.3`\n    ... which satisfies dependency `stdweb-derive = \"=0.5.3\"` (locked to 0.5.3) of package `stdweb v0.4.20`\n    ... which satisfies dependency `stdweb = \"^0.4.20\"` (locked to 0.4.20) of package `time v0.2.27`\n    ... which satisfies dependency `time = \"^0.2\"` (locked to 0.2.27) of package `renovate-test-2 v0.1.0 (/tmp/renovate/repos/github/sunshowers/renovate-test-2)`\nperhaps a crate was updated and forgotten to be re-vendored?\n\n    at ChildProcess.<anonymous> (/usr/local/renovate/lib/util/exec/common.ts:99:11)\n    at ChildProcess.emit (node:events:529:35)\n    at ChildProcess.emit (node:domain:489:12)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:292:12)"
+       },
+       "durationMs": 69
+DEBUG: Failed to update Cargo lock file (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "err": {
+         "cmd": "/bin/sh -c cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package syn@1.0.100 --precise 2.0.58",
+         "stderr": "    Updating crates.io index\nerror: failed to select a version for the requirement `syn = \"^1\"`\ncandidate versions found which didn't match: 2.0.58\nlocation searched: crates.io index\nrequired by package `stdweb-derive v0.5.3`\n    ... which satisfies dependency `stdweb-derive = \"=0.5.3\"` (locked to 0.5.3) of package `stdweb v0.4.20`\n    ... which satisfies dependency `stdweb = \"^0.4.20\"` (locked to 0.4.20) of package `time v0.2.27`\n    ... which satisfies dependency `time = \"^0.2\"` (locked to 0.2.27) of package `renovate-test-2 v0.1.0 (/tmp/renovate/repos/github/sunshowers/renovate-test-2)`\nperhaps a crate was updated and forgotten to be re-vendored?\n",
+         "stdout": "",
+         "options": {
+           "cwd": "/tmp/renovate/repos/github/sunshowers/renovate-test-2",
+           "encoding": "utf-8",
+           "env": {
+             "GIT_CONFIG_KEY_0": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_0": "ssh://**redacted**@github.com/",
+             "GIT_CONFIG_KEY_1": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_1": "git@github.com:",
+             "GIT_CONFIG_KEY_2": "url.https://**redacted**@github.com/.insteadOf",
+             "GIT_CONFIG_VALUE_2": "https://github.com/",
+             "GIT_CONFIG_COUNT": "3",
+             "HOME": "/home/ubuntu",
+             "PATH": "/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/go/bin:/home/ubuntu/bin:/home/ubuntu/.npm-global/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+             "LC_ALL": "C.UTF-8",
+             "LANG": "C.UTF-8",
+             "CONTAINERBASE_CACHE_DIR": "/tmp/renovate/cache/containerbase"
+           },
+           "maxBuffer": 10485760,
+           "timeout": 900000
+         },
+         "exitCode": 101,
+         "name": "ExecError",
+         "message": "Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package syn@1.0.100 --precise 2.0.58\n    Updating crates.io index\nerror: failed to select a version for the requirement `syn = \"^1\"`\ncandidate versions found which didn't match: 2.0.58\nlocation searched: crates.io index\nrequired by package `stdweb-derive v0.5.3`\n    ... which satisfies dependency `stdweb-derive = \"=0.5.3\"` (locked to 0.5.3) of package `stdweb v0.4.20`\n    ... which satisfies dependency `stdweb = \"^0.4.20\"` (locked to 0.4.20) of package `time v0.2.27`\n    ... which satisfies dependency `time = \"^0.2\"` (locked to 0.2.27) of package `renovate-test-2 v0.1.0 (/tmp/renovate/repos/github/sunshowers/renovate-test-2)`\nperhaps a crate was updated and forgotten to be re-vendored?\n",
+         "stack": "ExecError: Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package syn@1.0.100 --precise 2.0.58\n    Updating crates.io index\nerror: failed to select a version for the requirement `syn = \"^1\"`\ncandidate versions found which didn't match: 2.0.58\nlocation searched: crates.io index\nrequired by package `stdweb-derive v0.5.3`\n    ... which satisfies dependency `stdweb-derive = \"=0.5.3\"` (locked to 0.5.3) of package `stdweb v0.4.20`\n    ... which satisfies dependency `stdweb = \"^0.4.20\"` (locked to 0.4.20) of package `time v0.2.27`\n    ... which satisfies dependency `time = \"^0.2\"` (locked to 0.2.27) of package `renovate-test-2 v0.1.0 (/tmp/renovate/repos/github/sunshowers/renovate-test-2)`\nperhaps a crate was updated and forgotten to be re-vendored?\n\n    at ChildProcess.<anonymous> (/usr/local/renovate/lib/util/exec/common.ts:99:11)\n    at ChildProcess.emit (node:events:529:35)\n    at ChildProcess.emit (node:domain:489:12)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:292:12)"
+       }
+DEBUG: Updated 1 package files (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: No updated lock files in branch (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: PR has no releaseTimestamp (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: 1 file(s) to commit (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Preparing files for committing to branch renovate/syn-2.x (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: git commit (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/syn-2.x",
+         "commit": "b7b87eebd7197fa95d719de34d8921417629dfe8",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 0}
+       }
+DEBUG: Pushing refSpec renovate/syn-2.x:renovate/syn-2.x (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: git push (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "result": {
+         "pushed": [
+           {
+             "deleted": false,
+             "tag": false,
+             "branch": true,
+             "new": true,
+             "alreadyUpdated": false,
+             "local": "refs/heads/renovate/syn-2.x",
+             "remote": "refs/heads/renovate/syn-2.x"
+           }
+         ],
+         "ref": {"local": "refs/remotes/origin/renovate/syn-2.x"},
+         "remoteMessages": {
+           "all": [
+             "Create a pull request for 'renovate/syn-2.x' on GitHub by visiting:",
+             "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/syn-2.x"
+           ],
+           "pullRequestUrl": "https://github.com/sunshowers/renovate-test-2/pull/new/renovate/syn-2.x"
+         }
+       }
+DEBUG: Setting current branch to main (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: latest commit (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "branchName": "main",
+       "latestCommitDate": "2024-04-10T15:06:03-07:00"
+ INFO: Branch created (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "commitSha": "b7b87eebd7197fa95d719de34d8921417629dfe8"
+DEBUG: Updating status check state to failed (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Setting branch status (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "context": "renovate/artifacts",
+       "state": "red"
+DEBUG: Ensuring PR (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: There are 0 errors and 0 warnings (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: getBranchPr(renovate/syn-2.x) (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: findPr(renovate/syn-2.x, undefined, open) (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: findPr(renovate/syn-2.x, undefined, closed) (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Forcing PR because of artifact errors (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Fetching changelog: https://github.com/dtolnay/syn (1.0.100 -> 2.0.58) (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "prTitle": "Update Rust crate syn to v2"
+DEBUG: Creating PR (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "title": "Update Rust crate syn to v2",
+       "head": "sunshowers:renovate/syn-2.x",
+       "base": "main",
+       "draft": false
+DEBUG: PR created (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "pr": 8,
+       "draft": false
+DEBUG: Adding labels '' to #8 (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+ INFO: PR created (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "pr": 8,
+       "prTitle": "Update Rust crate syn to v2"
+DEBUG: addParticipants(pr=8) (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: setPrCache() (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Created Pull Request #8 (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+ WARN: artifactErrors (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "artifactErrors": [
+         {
+           "lockFile": "Cargo.lock",
+           "stderr": "Command failed: cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --package syn@1.0.100 --precise 2.0.58\n    Updating crates.io index\nerror: failed to select a version for the requirement `syn = \"^1\"`\ncandidate versions found which didn't match: 2.0.58\nlocation searched: crates.io index\nrequired by package `stdweb-derive v0.5.3`\n    ... which satisfies dependency `stdweb-derive = \"=0.5.3\"` (locked to 0.5.3) of package `stdweb v0.4.20`\n    ... which satisfies dependency `stdweb = \"^0.4.20\"` (locked to 0.4.20) of package `time v0.2.27`\n    ... which satisfies dependency `time = \"^0.2\"` (locked to 0.2.27) of package `renovate-test-2 v0.1.0 (/tmp/renovate/repos/github/sunshowers/renovate-test-2)`\nperhaps a crate was updated and forgotten to be re-vendored?\n"
+         }
+       ]
+DEBUG: Getting comments for #8 (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Found 0 comments (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: Ensuring comment "⚠ Artifact update problem" in #8 (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+ INFO: Comment added (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+       "issueNo": 8,
+       "topic": "⚠ Artifact update problem"
+DEBUG: setBranchCommit() (repository=sunshowers/renovate-test-2, branch=renovate/syn-2.x)
+DEBUG: getBranchPr(renovate/indexmap-1.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/indexmap-1.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: Found PR #1 (repository=sunshowers/renovate-test-2)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/libc-0.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/libc-0.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: Found PR #2 (repository=sunshowers/renovate-test-2)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/base64-0.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/base64-0.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: Found PR #3 (repository=sunshowers/renovate-test-2)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/bitflags-2.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/bitflags-2.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: Found PR #4 (repository=sunshowers/renovate-test-2)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/time-0.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/time-0.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: Found PR #5 (repository=sunshowers/renovate-test-2)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/fastrand-2.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/fastrand-2.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: Found PR #6 (repository=sunshowers/renovate-test-2)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/indexmap-2.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/indexmap-2.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: Found PR #7 (repository=sunshowers/renovate-test-2)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2)
+DEBUG: getBranchPr(renovate/syn-2.x) (repository=sunshowers/renovate-test-2)
+DEBUG: findPr(renovate/syn-2.x, undefined, open) (repository=sunshowers/renovate-test-2)
+DEBUG: Found PR #8 (repository=sunshowers/renovate-test-2)
+DEBUG: getPrCache() (repository=sunshowers/renovate-test-2)
+DEBUG: ensureDependencyDashboard() (repository=sunshowers/renovate-test-2)
+DEBUG: Ensuring Dependency Dashboard (repository=sunshowers/renovate-test-2)
+DEBUG: ensureIssue(Dependency Dashboard) (repository=sunshowers/renovate-test-2)
+ INFO: Issue created (repository=sunshowers/renovate-test-2)
+DEBUG: validateReconfigureBranch() (repository=sunshowers/renovate-test-2)
+DEBUG: No reconfigure branch found (repository=sunshowers/renovate-test-2)
+DEBUG: Removing any stale branches (repository=sunshowers/renovate-test-2)
+DEBUG: config.repoIsOnboarded=true (repository=sunshowers/renovate-test-2)
+DEBUG: Branch lists (repository=sunshowers/renovate-test-2)
+       "branchList": [
+         "renovate/base64-0.x",
+         "renovate/bitflags-2.x",
+         "renovate/fastrand-2.x",
+         "renovate/indexmap-1.x",
+         "renovate/indexmap-2.x",
+         "renovate/libc-0.x",
+         "renovate/syn-2.x",
+         "renovate/time-0.x"
+       ],
+       "renovateBranches": [
+         "renovate/base64-0.x",
+         "renovate/bitflags-2.x",
+         "renovate/fastrand-2.x",
+         "renovate/indexmap-1.x",
+         "renovate/indexmap-2.x",
+         "renovate/libc-0.x",
+         "renovate/syn-2.x",
+         "renovate/time-0.x"
+       ]
+DEBUG: remainingBranches= (repository=sunshowers/renovate-test-2)
+DEBUG: No branches to clean up (repository=sunshowers/renovate-test-2)
+DEBUG: Retrieving issueList (repository=sunshowers/renovate-test-2)
+DEBUG: Retrieving issueList (repository=sunshowers/renovate-test-2)
+DEBUG: Retrieved 1 issues (repository=sunshowers/renovate-test-2)
+DEBUG: Retrieved 1 issues (repository=sunshowers/renovate-test-2)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=sunshowers/renovate-test-2)
+DEBUG: Branch summary (repository=sunshowers/renovate-test-2)
+       "cacheModified": undefined,
+       "baseBranches": [{"branchName": "main", "sha": "89d63baefc689f43d3f3955d988a9e67b7d914ab"}],
+       "branches": [
+         {
+           "automerge": false,
+           "baseBranch": "main",
+           "baseBranchSha": "89d63baefc689f43d3f3955d988a9e67b7d914ab",
+           "branchName": "renovate/indexmap-1.x",
+           "branchSha": "b82e5aa03d07ff0234c340ab6b2a891df18d3b44",
+           "isModified": false,
+           "isPristine": true
+         },
+         {
+           "automerge": false,
+           "baseBranch": "main",
+           "baseBranchSha": "89d63baefc689f43d3f3955d988a9e67b7d914ab",
+           "branchName": "renovate/libc-0.x",
+           "branchSha": "8e914d1b16e7ad89fa49a63e51714b82efead8b3",
+           "isModified": false,
+           "isPristine": true
+         },
+         {
+           "automerge": false,
+           "baseBranch": "main",
+           "baseBranchSha": "89d63baefc689f43d3f3955d988a9e67b7d914ab",
+           "branchName": "renovate/base64-0.x",
+           "branchSha": "1f58cf542180939491d71dad8cb7d8b77fabf8c3",
+           "isModified": false,
+           "isPristine": true
+         },
+         {
+           "automerge": false,
+           "baseBranch": "main",
+           "baseBranchSha": "89d63baefc689f43d3f3955d988a9e67b7d914ab",
+           "branchName": "renovate/bitflags-2.x",
+           "branchSha": "f8785443e4eb94f892d904aaa2bb0d3cc61a9bd5",
+           "isModified": false,
+           "isPristine": true
+         },
+         {
+           "automerge": false,
+           "baseBranch": "main",
+           "baseBranchSha": "89d63baefc689f43d3f3955d988a9e67b7d914ab",
+           "branchName": "renovate/time-0.x",
+           "branchSha": "3c452c648c65d1f04e12ca85045ee0859b6aad6e",
+           "isModified": false,
+           "isPristine": true
+         },
+         {
+           "automerge": false,
+           "baseBranch": "main",
+           "baseBranchSha": "89d63baefc689f43d3f3955d988a9e67b7d914ab",
+           "branchName": "renovate/fastrand-2.x",
+           "branchSha": "d86c2958b43591af417ed589a0e019705a1a7e1d",
+           "isModified": false,
+           "isPristine": true
+         },
+         {
+           "automerge": false,
+           "baseBranch": "main",
+           "baseBranchSha": "89d63baefc689f43d3f3955d988a9e67b7d914ab",
+           "branchName": "renovate/indexmap-2.x",
+           "branchSha": "b04d98c121d1d9a5dbdd0bf35cf971e717d028d5",
+           "isModified": false,
+           "isPristine": true
+         },
+         {
+           "automerge": false,
+           "baseBranch": "main",
+           "baseBranchSha": "89d63baefc689f43d3f3955d988a9e67b7d914ab",
+           "branchName": "renovate/syn-2.x",
+           "branchSha": "b7b87eebd7197fa95d719de34d8921417629dfe8",
+           "isModified": false,
+           "isPristine": true
+         }
+       ],
+       "defaultBranch": "main",
+       "inactiveBranches": []
+DEBUG: branches info extended (repository=sunshowers/renovate-test-2)
+       "branchesInformation": [
+         {
+           "branchName": "renovate/indexmap-1.x",
+           "prNo": 1,
+           "prTitle": "Update Rust crate indexmap to 1.9",
+           "result": "pr-created",
+           "upgrades": [
+             {
+               "datasource": "crate",
+               "depName": "indexmap",
+               "displayPending": "",
+               "fixedVersion": "1.9.3",
+               "currentVersion": "1.9.3",
+               "currentValue": "1.0",
+               "newValue": "1.9",
+               "newVersion": "1.9.3",
+               "packageFile": "Cargo.toml",
+               "updateType": "patch",
+               "packageName": "indexmap"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/libc-0.x",
+           "prNo": 2,
+           "prTitle": "Update Rust crate libc to 0.2.153",
+           "result": "pr-created",
+           "upgrades": [
+             {
+               "datasource": "crate",
+               "depName": "libc",
+               "displayPending": "",
+               "fixedVersion": "0.2.140",
+               "currentVersion": "0.2.140",
+               "currentValue": "0.2.140",
+               "newValue": "0.2.153",
+               "newVersion": "0.2.153",
+               "packageFile": "Cargo.toml",
+               "updateType": "patch",
+               "packageName": "libc"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/base64-0.x",
+           "prNo": 3,
+           "prTitle": "Update Rust crate base64 to 0.22.0",
+           "result": "pr-created",
+           "upgrades": [
+             {
+               "datasource": "crate",
+               "depName": "base64",
+               "displayPending": "",
+               "fixedVersion": "0.21.7",
+               "currentVersion": "0.21.7",
+               "currentValue": "0.21.0",
+               "newValue": "0.22.0",
+               "newVersion": "0.22.0",
+               "packageFile": "Cargo.toml",
+               "updateType": "minor",
+               "packageName": "base64"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/bitflags-2.x",
+           "prNo": 4,
+           "prTitle": "Update Rust crate bitflags to 2.5.0",
+           "result": "pr-created",
+           "upgrades": [
+             {
+               "datasource": "crate",
+               "depName": "bitflags",
+               "displayPending": "",
+               "fixedVersion": "2.4.0",
+               "currentVersion": "2.4.0",
+               "currentValue": "2.4.0",
+               "newValue": "2.5.0",
+               "newVersion": "2.5.0",
+               "packageFile": "Cargo.toml",
+               "updateType": "minor",
+               "packageName": "bitflags"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/time-0.x",
+           "prNo": 5,
+           "prTitle": "Update Rust crate time to 0.3",
+           "result": "pr-created",
+           "upgrades": [
+             {
+               "datasource": "crate",
+               "depName": "time",
+               "displayPending": "",
+               "fixedVersion": "0.2.27",
+               "currentVersion": "0.2.27",
+               "currentValue": "0.2",
+               "newValue": "0.3",
+               "newVersion": "0.3.35",
+               "packageFile": "Cargo.toml",
+               "updateType": "minor",
+               "packageName": "time"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/fastrand-2.x",
+           "prNo": 6,
+           "prTitle": "Update Rust crate fastrand to v2",
+           "result": "pr-created",
+           "upgrades": [
+             {
+               "datasource": "crate",
+               "depName": "fastrand",
+               "displayPending": "",
+               "fixedVersion": "1.9.0",
+               "currentVersion": "1.9.0",
+               "currentValue": "1.9.0",
+               "newValue": "2.0.2",
+               "newVersion": "2.0.2",
+               "packageFile": "Cargo.toml",
+               "updateType": "major",
+               "packageName": "fastrand"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/indexmap-2.x",
+           "prNo": 7,
+           "prTitle": "Update Rust crate indexmap to v2",
+           "result": "pr-created",
+           "upgrades": [
+             {
+               "datasource": "crate",
+               "depName": "indexmap",
+               "displayPending": "",
+               "fixedVersion": "1.9.3",
+               "currentVersion": "1.9.3",
+               "currentValue": "1.0",
+               "newValue": "2.2",
+               "newVersion": "2.2.6",
+               "packageFile": "Cargo.toml",
+               "updateType": "major",
+               "packageName": "indexmap"
+             }
+           ]
+         },
+         {
+           "branchName": "renovate/syn-2.x",
+           "prNo": 8,
+           "prTitle": "Update Rust crate syn to v2",
+           "result": "pr-created",
+           "upgrades": [
+             {
+               "datasource": "crate",
+               "depName": "syn",
+               "displayPending": "",
+               "fixedVersion": "1.0.100",
+               "currentVersion": "1.0.100",
+               "currentValue": "1",
+               "newValue": "2",
+               "newVersion": "2.0.58",
+               "packageFile": "Cargo.toml",
+               "updateType": "major",
+               "packageName": "syn"
+             }
+           ]
+         }
+       ]
+DEBUG: Renovate repository PR statistics (repository=sunshowers/renovate-test-2)
+       "stats": {"total": 8, "open": 8, "closed": 0, "merged": 0}
+DEBUG: Repository result: done, status: onboarded, enabled: true, onboarded: true (repository=sunshowers/renovate-test-2)
+DEBUG: Repository timing splits (milliseconds) (repository=sunshowers/renovate-test-2)
+       "splits": {"init": 2911, "extract": 42, "lookup": 678, "onboarding": 0, "update": 58484},
+       "total": 63041
+DEBUG: Package cache statistics (repository=sunshowers/renovate-test-2)
+       "get": {"count": 321, "avgMs": 0, "medianMs": 0, "maxMs": 4, "totalMs": 39},
+       "set": {"count": 321, "avgMs": 1, "medianMs": 1, "maxMs": 11, "totalMs": 407}
+DEBUG: HTTP statistics (repository=sunshowers/renovate-test-2)
+       "urls": {
+         "https://api.github.com/graphql": {"POST": {"200": 28}},
+         "https://api.github.com/repos/bitflags/bitflags": {"GET": {"200": 1}},
+         "https://api.github.com/repos/bitflags/bitflags/git/blobs/ee4882fb28891f3ec74f86f914bab456a33c539c": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/bitflags/bitflags/git/trees/main": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/dtolnay/syn": {"GET": {"200": 1}},
+         "https://api.github.com/repos/dtolnay/syn/git/trees/master": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/indexmap-rs/indexmap": {"GET": {"200": 1}},
+         "https://api.github.com/repos/indexmap-rs/indexmap/git/blobs/8c033db042214fce58de82e4ad99e2e85d909f6a": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/indexmap-rs/indexmap/git/trees/master": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/marshallpierce/rust-base64": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/marshallpierce/rust-base64/git/blobs/46e281e7b123a1fb3504ca0052388827b28663f7": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/marshallpierce/rust-base64/git/trees/master": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/rust-lang/libc": {"GET": {"200": 1}},
+         "https://api.github.com/repos/rust-lang/libc/git/trees/main": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/smol-rs/fastrand": {"GET": {"200": 1}},
+         "https://api.github.com/repos/smol-rs/fastrand/git/blobs/e6d5f7eb68883c067db7187c0ba5e17bbbd47986": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/smol-rs/fastrand/git/trees/master": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/sunshowers/renovate-test-2/commits/b7b87eebd7197fa95d719de34d8921417629dfe8/statuses": {
+           "GET": {"200": 2}
+         },
+         "https://api.github.com/repos/sunshowers/renovate-test-2/commits/renovate/syn-2.x/status": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/sunshowers/renovate-test-2/issues": {
+           "POST": {"201": 1}
+         },
+         "https://api.github.com/repos/sunshowers/renovate-test-2/issues/8/comments": {
+           "POST": {"201": 1},
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/sunshowers/renovate-test-2/pulls": {
+           "POST": {"201": 8},
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/sunshowers/renovate-test-2/statuses/b7b87eebd7197fa95d719de34d8921417629dfe8": {
+           "POST": {"201": 1}
+         },
+         "https://api.github.com/repos/time-rs/time": {"GET": {"200": 1}},
+         "https://api.github.com/repos/time-rs/time/git/blobs/ce82be0094a4c46373de8d5ded8ea6aab44cdbc8": {
+           "GET": {"200": 1}
+         },
+         "https://api.github.com/repos/time-rs/time/git/trees/main": {
+           "GET": {"200": 1}
+         },
+         "https://auth.docker.io/token": {"GET": {"200": 1}},
+         "https://crates.io/api/v1/crates/base64": {"GET": {"200": 1}},
+         "https://crates.io/api/v1/crates/bitflags": {"GET": {"200": 1}},
+         "https://crates.io/api/v1/crates/camino": {"GET": {"200": 1}},
+         "https://crates.io/api/v1/crates/chrono": {"GET": {"200": 1}},
+         "https://crates.io/api/v1/crates/debug-ignore": {"GET": {"200": 1}},
+         "https://crates.io/api/v1/crates/fastrand": {"GET": {"200": 1}},
+         "https://crates.io/api/v1/crates/indexmap": {"GET": {"200": 1}},
+         "https://crates.io/api/v1/crates/libc": {"GET": {"200": 1}},
+         "https://crates.io/api/v1/crates/syn": {"GET": {"200": 1}},
+         "https://crates.io/api/v1/crates/time": {"GET": {"200": 1}},
+         "https://index.docker.io/v2/library/rust/tags/list": {
+           "GET": {"200": 1, "401": 1}
+         },
+         "https://raw.githubusercontent.com/rust-lang/crates.io-index/master/3/s/syn": {
+           "GET": {"200": 1}
+         },
+         "https://raw.githubusercontent.com/rust-lang/crates.io-index/master/ba/se/base64": {
+           "GET": {"200": 1}
+         },
+         "https://raw.githubusercontent.com/rust-lang/crates.io-index/master/bi/tf/bitflags": {
+           "GET": {"200": 1}
+         },
+         "https://raw.githubusercontent.com/rust-lang/crates.io-index/master/ca/mi/camino": {
+           "GET": {"200": 1}
+         },
+         "https://raw.githubusercontent.com/rust-lang/crates.io-index/master/ch/ro/chrono": {
+           "GET": {"200": 1}
+         },
+         "https://raw.githubusercontent.com/rust-lang/crates.io-index/master/de/bu/debug-ignore": {
+           "GET": {"200": 1}
+         },
+         "https://raw.githubusercontent.com/rust-lang/crates.io-index/master/fa/st/fastrand": {
+           "GET": {"200": 1}
+         },
+         "https://raw.githubusercontent.com/rust-lang/crates.io-index/master/in/de/indexmap": {
+           "GET": {"200": 1}
+         },
+         "https://raw.githubusercontent.com/rust-lang/crates.io-index/master/li/bc/libc": {
+           "GET": {"200": 1}
+         },
+         "https://raw.githubusercontent.com/rust-lang/crates.io-index/master/ti/me/time": {
+           "GET": {"200": 1}
+         }
+       },
+       "hosts": {
+         "api.github.com": {
+           "count": 63,
+           "reqAvgMs": 489,
+           "reqMedianMs": 376,
+           "reqMaxMs": 1559,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 1
+         },
+         "auth.docker.io": {
+           "count": 1,
+           "reqAvgMs": 278,
+           "reqMedianMs": 278,
+           "reqMaxMs": 278,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 0
+         },
+         "crates.io": {
+           "count": 10,
+           "reqAvgMs": 130,
+           "reqMedianMs": 127,
+           "reqMaxMs": 185,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 0
+         },
+         "index.docker.io": {
+           "count": 2,
+           "reqAvgMs": 288,
+           "reqMedianMs": 325,
+           "reqMaxMs": 325,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 0
+         },
+         "raw.githubusercontent.com": {
+           "count": 10,
+           "reqAvgMs": 124,
+           "reqMedianMs": 143,
+           "reqMaxMs": 196,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 0
+         }
+       },
+       "requests": 86
+DEBUG: HTTP cache statistics (repository=sunshowers/renovate-test-2)
+       "https://api.github.com": {"/repos/sunshowers/renovate-test-2/pulls": {"hit": 0, "miss": 1}}
+DEBUG: Lookup statistics (repository=sunshowers/renovate-test-2)
+       "crate": {"count": 10, "avgMs": 268, "medianMs": 275, "maxMs": 329, "totalMs": 2678}
+DEBUG: dns cache (repository=sunshowers/renovate-test-2)
+       "hosts": []
+ INFO: Repository finished (repository=sunshowers/renovate-test-2)
+       "cloned": true,
+       "durationMs": 63041
+DEBUG: Checking file package cache for expired items
+DEBUG: Deleted 0 of 319 file cached entries in 101ms
