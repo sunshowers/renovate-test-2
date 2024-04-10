@@ -32,7 +32,7 @@ libc = "0.2.140"
 
 # row 4, variant 1: range is "x.y.z" where x >= 1 (equivalent to "^x.y.z"), update is incompatible
 # (1.9.0 -> 2.0.2)
-fastrand = "1.9.0"
+fastrand = "2.0.2"
 # row 4, variant 2: range is "0.y.z" (equivalent to "~0.y.z"), update is incompatible (0.21.0 ->
 # 0.22.0)
 base64 = "0.21.0"
