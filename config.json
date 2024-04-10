@@ -1,0 +1,5 @@
+{
+  "platform": "github",
+  "autodiscover": false,
+  "repositories": ["sunshowers/renovate-test-2"]
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "dependencyDashboard": true,
+  "dependencyDashboardApproval": false,
+  "dependencyDashboardAutoclose": false,
+  "prHourlyLimit": 50,
+  "enabledManagers": [
+    "cargo"
+  ]
+}
