@@ -39,7 +39,7 @@ time = "0.2"
 # (2.4.0 -> 2.5.0)
 #
 # PR created: https://github.com/sunshowers/renovate-test-2/pull/4
-bitflags = "2.4.0"
+bitflags = "2.5.0"
 # row 3, variant 2: range is "0.y.z" (equivalent to "~0.y.z"), update is compatible (0.2.140 ->
 # 0.2.153)
 #
