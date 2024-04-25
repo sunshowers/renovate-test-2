@@ -18,7 +18,7 @@ debug-ignore = "1.0"
 # anything within the 0.y series: 0.4.31 -> 0.4.37)
 #
 # PR created: None
-chrono = "0.4"
+chrono = "0.4.38"
 
 # row 2, variant 1: range is "x" where x >= 1 (equivalent to "^x"), update is incompatible (1.0.100
 # -> 2.0.58)
