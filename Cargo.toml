@@ -29,7 +29,7 @@ syn = "1"
 # (1.9.3 -> 2.0.0)
 #
 # PR created: https://github.com/sunshowers/renovate-test-2/pull/7
-indexmap = "1.0"
+indexmap = "2.2.6"
 # row 2, variant 3: range is "0.y" (equivalent to "~0.y"), update is incompatible (0.2.27 -> 0.3.35)
 #
 # PR created: https://github.com/sunshowers/renovate-test-2/pull/5
