@@ -13,7 +13,7 @@ camino = "1"
 # -> 1.0.5)
 #
 # PR created: None
-debug-ignore = "1.0"
+debug-ignore = "1.0.5"
 # row 1, variant 3: range is "0.y" (equivalent to "~0.y"), update is compatible (for Rust this means
 # anything within the 0.y series: 0.4.31 -> 0.4.37)
 #
