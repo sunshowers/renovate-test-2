@@ -24,7 +24,7 @@ chrono = "0.4"
 # -> 2.0.58)
 #
 # PR created: https://github.com/sunshowers/renovate-test-2/pull/8
-syn = "1"
+syn = "2.0.60"
 # row 2, variant 2: range is "x.y" where x >= 1 (equivalent to "^x.y"), update is incompatible
 # (1.9.3 -> 2.0.0)
 #
