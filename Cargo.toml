@@ -44,7 +44,7 @@ bitflags = "2.4.0"
 # 0.2.153)
 #
 # PR created: https://github.com/sunshowers/renovate-test-2/pull/2
-libc = "0.2.140"
+libc = "0.2.153"
 
 # row 4, variant 1: range is "x.y.z" where x >= 1 (equivalent to "^x.y.z"), update is incompatible
 # (1.9.0 -> 2.0.2)
